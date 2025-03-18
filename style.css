@@ -30,7 +30,7 @@ a:active {
     width: 150px;
     height: 150px;
     border-radius: 10px;
-    margin: -160px 0 0 1240px;
+    margin: -160px 0 0 1345px;
     border-radius: 12px;
     border: 2px solid black;
 }
@@ -58,7 +58,7 @@ a:active {
 #container {
     width: 1050px;
     height: 600px;
-    margin: 25px 0 0 200px;
+    margin: 25px 0 0 235px;
     display: grid;
     grid-template-columns: 350px 350px 350px;
     grid-template-rows: 200px 200px 200px;
@@ -147,7 +147,7 @@ a:active {
     width: 1100px;
     height: 250px;
     border: 8px double black;
-    margin: 100px 0 0 175px;
+    margin: 100px 0 0 205px;
 }
 #choose {
     margin: 40px 0 0 70px;
