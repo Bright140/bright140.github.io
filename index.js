@@ -76,3 +76,50 @@ function element2() {
 }
 setInterval(element1,3000);
 setInterval(element2,6000);
+function random(min,max) {
+    return Math.floor(Math.random()*(max-min+1));
+}
+function chosse(x) {
+    const url= ["url(./images/Icon_Sword.webp)","url(./images/Icon_Claymore.webp)","url(./images/Icon_Polearm.webp)","url(./images/Icon_Catalyst.webp)","url(./images/Icon_Bow.webp)"];
+    t= random(1,5);
+    w= url[t];
+    document.getElementById(x).style.backgroundImage= w;
+    document.getElementById(x).style.display= 'block';
+    return w;
+}
+function content(a,b,c,d,e,f) {
+    const url= ["url(./images/Icon_Sword.webp)","url(./images/Icon_Claymore.webp)","url(./images/Icon_Polearm.webp)","url(./images/Icon_Catalyst.webp)","url(./images/Icon_Bow.webp)"];
+    document.getElementById(f).style.marginTop= "20px";
+    document.getElementById(f).style.fontStyle= 'italic';
+    if(a==url[0]&&b==url[0]&&c==url[0]&&d==url[0]&&e==url[0]) {
+        document.getElementById(f).innerHTML= "Sword attacks are the middle ground of melee weapons";
+    } else if(a==url[1]&&b==url[1]&&c==url[1]&&d==url[1]&&e==url[1]) {
+        document.getElementById(f).innerHTML= "Claymores attacks hit slower than melee weapons, but deal much more damage per swing";
+    } else if(a==url[2]&&b==url[2]&&c==url[2]&&d==url[2]&&e==url[2]) {
+        document.getElementById(f).innerHTML= "Polearms have fast attacks, long forward reach, and deal moderate damage per hit";
+    } else if(a==url[3]&&b==url[3]&&c==url[3]&&d==url[3]&&e==url[3]) {
+        document.getElementById(f).innerHTML= "Due to their magical nature, all attacks with a Catalyst are considered elemental damage";
+    } else if(a==url[4]&&b==url[4]&&c==url[4]&&d==url[4]&&e==url[4]) {
+        document.getElementById(f).innerHTML= "Bows boast long-ranged attacks, with Charged Attacks that are capable of hitting monsters with proper aim";
+    } else {
+        document.getElementById(f).innerHTML= "Good luck next time";
+    }
+}
+function start() {
+    x= chosse("S1"); y= chosse("P2"); z= chosse("C3"); w= chosse("C4"); v= chosse("B5");
+    content(x,y,z,w,v,'about');
+    document.getElementById("want").innerHTML= 'please wait...';
+}
+function reset() {
+    document.getElementById("S1").style.display= 'none';
+    document.getElementById("P2").style.display= 'none';
+    document.getElementById("C3").style.display= 'none';
+    document.getElementById("C4").style.display= 'none';
+    document.getElementById("B5").style.display= 'none';
+    document.getElementById("about").innerHTML= '';
+    document.getElementById("want").innerHTML= '';
+}
+function roll() {
+    start();
+    setTimeout(reset,3000);
+}
