@@ -130,3 +130,60 @@ a:active {
     font-size: 20px;
     color: white;
 }
+.container-0 {
+    width: 1100px;
+    height: 250px;
+    border: 8px double black;
+    margin: 100px 0 0 220px;
+}
+#choose {
+    margin: 40px 0 0 70px;
+    width: 100px;
+    height: 100px;
+    border-color: red yellow green blue;
+    border-width: 10px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-style: italic;
+}
+#choose:hover {
+    border-color: blue green yellow red;
+}
+.spcb {
+    width: 760px;
+    height: 128px;
+    margin: -120px 0 0 280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#sword,#polearm,#claymore,#catalyst,#bow {
+    border: 3px solid gray;
+    margin-top: 0;
+    width: 130px;
+    height: 130px;
+    border-radius: 15px;
+}
+#S1,#P2,#C3,#C4,#B5 {
+    width: 128px;
+    height: 128px;
+    margin-top: 0;
+}
+.title-0 {
+    width: 150px;
+    margin: -42px 0 0 155px;
+    font-size: 18px;
+    font-weight: 600;
+}
+#content-roll {
+    width: 760px;
+    height: 60px;
+    border-radius: 10px;
+    border: 2px dotted black;
+    margin: 25px 0 0 280px;
+}
+#want {
+    width: 100px;
+    margin: 10px 0 0 10px;
+}
