@@ -43,7 +43,6 @@ function time() {
     document.getElementById("minute").innerHTML= gmt;
 }
 setInterval(time,1000);
-'text3','Synthetic','St3','PS3','white','black','Gosei'
 function element1() {
     WFSE1('text1','Wind','Wt1','PW1','Green','rgb(0, 255, 0)','Wind (Phong)','Gentle as Wind');
     WFSE1('text2','Fire','Ft2','PF2','red','rgb(120, 0, 0)','Fire (Hoả)','Strong as Fire');
