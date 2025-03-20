@@ -79,17 +79,14 @@ function random(min,max) {
     return Math.floor(Math.random()*(max-min+1));
 }
 function chosse(x) {
-    const url= ["url(./images/Icon_Sword.webp)","url(./images/Icon_Claymore.webp)","url(./images/Icon_Polearm.webp)","url(./images/Icon_Catalyst.webp)","url(./images/Icon_Bow.webp)"];
+    const url= ["./images/Icon_Sword.webp","./images/Icon_Claymore.webp","./images/Icon_Polearm.webp","./images/Icon_Catalyst.webp","./images/Icon_Bow.webp"];
     t= random(1,5);
-    w= url[t];
-    document.getElementById(x).style.backgroundImage= w;
-    document.getElementById(x).style.display= 'block';
+    w= url[t]; r= '<img src="'; l= '" alt="">';
+    document.getElementById(x).innerHTML= r+w+l;
     return w;
 }
 function content(a,b,c,d,e,f) {
-    const url= ["url(./images/Icon_Sword.webp)","url(./images/Icon_Claymore.webp)","url(./images/Icon_Polearm.webp)","url(./images/Icon_Catalyst.webp)","url(./images/Icon_Bow.webp)"];
-    document.getElementById(f).style.marginTop= "20px";
-    document.getElementById(f).style.fontStyle= 'italic';
+    const url= ["./images/Icon_Sword.webp","./images/Icon_Claymore.webp","./images/Icon_Polearm.webp","./images/Icon_Catalyst.webp","./images/Icon_Bow.webp"];
     if(a==url[0]&&b==url[0]&&c==url[0]&&d==url[0]&&e==url[0]) {
         document.getElementById(f).innerHTML= "Sword attacks are the middle ground of melee weapons";
     } else if(a==url[1]&&b==url[1]&&c==url[1]&&d==url[1]&&e==url[1]) {
@@ -104,19 +101,16 @@ function content(a,b,c,d,e,f) {
         document.getElementById(f).innerHTML= "Good luck next time";
     }
 }
+function stop(x) {
+    document.getElementById(x).innerHTML= '';
+}
 function start() {
     x= chosse("S1"); y= chosse("P2"); z= chosse("C3"); w= chosse("C4"); v= chosse("B5");
     content(x,y,z,w,v,'about');
     document.getElementById("want").innerHTML= 'please wait...';
 }
 function reset() {
-    document.getElementById("S1").style.display= 'none';
-    document.getElementById("P2").style.display= 'none';
-    document.getElementById("C3").style.display= 'none';
-    document.getElementById("C4").style.display= 'none';
-    document.getElementById("B5").style.display= 'none';
-    document.getElementById("about").innerHTML= '';
-    document.getElementById("want").innerHTML= '';
+    stop("S1"); stop("P2"); stop("C3"); stop("C4"); stop("B5"); stop("about"); stop("want");
 }
 function roll() {
     start();
