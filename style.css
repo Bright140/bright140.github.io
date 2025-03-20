@@ -200,3 +200,7 @@ a:active {
     width: 100px;
     margin: 10px 0 0 10px;
 }
+#about {
+    margin-top: 20px;
+    font-style: italic;
+}
