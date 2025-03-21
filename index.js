@@ -6,6 +6,37 @@ function changer0() {
     document.getElementById("name").style.color= "darkslateblue";
     document.getElementById("name").style.fontStyle= "normal";
 }
+function changer1() {
+    document.getElementById("like").innerHTML= '&#10084';
+}
+function changer2() {
+    document.getElementById("like").innerHTML= 'love';
+}
+function apha(s) {
+    document.getElementById("title-pro").innerHTML= s; 
+}
+function namers() {
+    const stri= ['P','Ph','Pha','Phan','Phan S','Phan Su','Phan Su B','Phan Su Bi','Phan Su Bin'];
+    const stra= ['','P','Ph','Pha','Phan','Phan S','Phan Su','Phan Su B','Phan Su Bi'];
+    setTimeout(apha,0,stri[0]); 
+    setTimeout(apha,200,stri[1]); 
+    setTimeout(apha,400,stri[2]); 
+    setTimeout(apha,600,stri[3]);
+    setTimeout(apha,800,stri[4]); 
+    setTimeout(apha,1000,stri[5]); 
+    setTimeout(apha,1200,stri[6]); 
+    setTimeout(apha,1400,stri[7]);
+    setTimeout(apha,1600,stri[8]);
+    setTimeout(apha,1800,stra[7]); 
+    setTimeout(apha,2000,stra[6]); 
+    setTimeout(apha,2200,stra[5]); 
+    setTimeout(apha,2400,stra[4]);
+    setTimeout(apha,2600,stra[3]); 
+    setTimeout(apha,2800,stra[2]); 
+    setTimeout(apha,3000,stra[1]); 
+    setTimeout(apha,3200,stra[0]);
+}
+setInterval(namers,3600);
 function WFSE1(a,b,c,d,x,y,z,w) {
     document.getElementById(a).style.backgroundColor= x;
     document.getElementById(a).style.borderColor= y;
@@ -33,6 +64,10 @@ function ap0(x) {
         return x;
     }
 }
+function color(x) {
+    const c= ["red","orange","yellow","green","blue","indigo","pink"];
+    return c[x];
+}
 function time() {
     const tn= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     const t= new Date();
@@ -41,6 +76,7 @@ function time() {
     h= ap0(t.getHours()); n= ap0(t.getMinutes()); s= ap0(t.getSeconds());
     gmt= tnv+' '+y+'/'+m+'/'+d+' - '+h+':'+n+':'+s;
     document.getElementById("minute").innerHTML= gmt;
+    document.getElementById("minute").style.color= color(t.getDay());
 }
 setInterval(time,1000);
 function element1() {
@@ -104,10 +140,16 @@ function content(a,b,c,d,e,f) {
 function stop(x) {
     document.getElementById(x).innerHTML= '';
 }
+function want(n) {
+    t= "please wait... ";
+    document.getElementById("want").innerHTML= t+n;
+}
 function start() {
     x= chosse("S1"); y= chosse("P2"); z= chosse("C3"); w= chosse("C4"); v= chosse("B5");
-    content(x,y,z,w,v,'about');
-    document.getElementById("want").innerHTML= 'please wait...';
+    setTimeout(content,500,x,y,z,w,v,'about');
+    setTimeout(want,0,'3');
+    setTimeout(want,1000,'2');
+    setTimeout(want,2000,'1');
 }
 function reset() {
     stop("S1"); stop("P2"); stop("C3"); stop("C4"); stop("B5"); stop("about"); stop("want");
