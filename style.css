@@ -22,6 +22,9 @@ a:active {
     text-decoration-color: gray;
     color: blueviolet;
 }
+.title:hover {
+    text-decoration: none;
+}
 #content {
     font-size: 15px;
     font-weight: 600;
@@ -39,6 +42,13 @@ a:active {
     height: 100%;
     border-radius: 10px;
 }
+.title-profile {
+    width: 100px;
+    height: 50px;
+    margin: 15px 0 0 1370px;
+    color: darkslateblue;
+    font-weight: bold;
+}
 .UTC {
     font-size: 15px;
     font-weight: bold;
@@ -52,13 +62,18 @@ a:active {
 #school {
     color: blue;
 }
+#school:hover {
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
 #minute {
     display: inline;
+    font-style: italic;
 }
 #container {
     width: 1050px;
     height: 600px;
-    margin: 25px 0 0 235px;
+    margin: -20px 0 0 235px;
     display: grid;
     grid-template-columns: 350px 350px 350px;
     grid-template-rows: 200px 200px 200px;
@@ -185,7 +200,7 @@ a:active {
 }
 .title-0 {
     width: 150px;
-    margin: -42px 0 0 155px;
+    margin: -42px 0 0 190px;
     font-size: 18px;
     font-weight: 600;
 }
@@ -197,7 +212,7 @@ a:active {
     margin: 25px 0 0 280px;
 }
 #want {
-    width: 100px;
+    width: 120px;
     margin: 10px 0 0 10px;
 }
 #about {
