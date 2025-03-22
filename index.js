@@ -65,7 +65,7 @@ function ap0(x) {
     }
 }
 function color(x) {
-    const c= ["red","orange","yellow","green","blue","indigo","pink"];
+    const c= ["red","orange","rgb(200, 200, 0)","green","blue","indigo","palevioletred"];
     return c[x];
 }
 function time() {
