@@ -72,39 +72,39 @@ a:active {
 }
 .music {
     width: 1050px;
-    height: 793px;
-    margin: -30px 0 0 230px;
+    height: 368px;
+    margin: 10px 0 0 230px;
     border: 4px solid gray;
     border-radius: 16px;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
-.music > p {
-    margin: 8px 0 0 460px;
+#title-song {
+    margin: -30px 0 0 690px;
     font-size: 18px;
     font-style: italic;
 }
-.music > p > #so1 {
+#so1 {
     color: rgb(186, 186, 27);
 }
-.music > p > #so2 {
+#so2 {
     color: red;
 }
-.music > p > #so3 {
+#so3 {
     color: rgb(99, 99, 216);
 }
-.music > p > #so4 {
+#so4 {
     color: rgb(141, 69, 81);
 }
 .music > div {
-    width: 1050px;
-    height: 754px;
-    margin-top: 10px;
+    width: 2150px;
+    height: 352px;
     display: grid;
-    grid-template-columns: 500px 500px;
-    grid-template-rows: 352px 352px;
+    grid-template-columns: 500px 500px 500px 500px;
+    grid-template-rows: 352px;
     column-gap: 50px;
-    row-gap: 50px;
     background-color: black;
-    border-radius: 16px;
+    border-radius: 12px;
 }
 #container {
     width: 1050px;
