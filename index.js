@@ -162,6 +162,3 @@ function mobile() {
     alert("Nếu bạn đang dùng mobile, thì vui lòng chuyển sang chế độ xoay ngang hoặc chế độ trang web cho máy tính để có trải nghiệm tốt hơn d=====(￣▽￣*)b");
 }
 document.getElementsByTagName("body")[0].onload= mobile;
-function show() {
-    document.getElementById("title-video").style.display= "block";
-}
