@@ -70,17 +70,13 @@ a:active {
     display: inline;
     font-style: italic;
 }
-.music {
-    width: 1050px;
-    height: 368px;
-    margin: 10px 0 0 230px;
-    border: 4px solid gray;
-    border-radius: 16px;
-    overflow-x: scroll;
-    overflow-y: hidden;
+.title-music {
+    width: 1060px;
+    height: 410px;
+    margin: -30px 0 0 230px;
 }
-#title-song {
-    margin: -30px 0 0 690px;
+.title-music > p {
+    margin: 0 0 0 460px;
     font-size: 18px;
     font-style: italic;
 }
@@ -96,7 +92,16 @@ a:active {
 #so4 {
     color: rgb(141, 69, 81);
 }
-.music > div {
+.title-music > div {
+    width: 1050px;
+    height: 368px;
+    margin: 10px 0 0 0;
+    border: 4px solid gray;
+    border-radius: 16px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.title-music > div > div {
     width: 2150px;
     height: 352px;
     display: grid;
@@ -105,6 +110,20 @@ a:active {
     column-gap: 50px;
     background-color: black;
     border-radius: 12px;
+}
+.video-limitid {
+    width: 1250px;
+    height: 770px;
+    margin: 100px 0 0 140px;
+}
+.video-limitid > video {
+    width: 1250px;
+    height: 750px;
+    margin-top: -25px;
+}
+.video-limitid > p {
+    margin: 10px 0 0 450px;
+    display: none;
 }
 #container {
     width: 1050px;
