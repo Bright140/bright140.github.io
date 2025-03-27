@@ -124,6 +124,9 @@ a:active {
 .video-limitid > p {
     margin: 10px 0 0 450px;
 }
+.video-limitid > p > span {
+    font-style: italic;
+}
 #container {
     width: 1050px;
     height: 600px;
