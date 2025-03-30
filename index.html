@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phan Su Bin | Bright140</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="Bright.jpeg">
+    <link rel="icon" href="Bright140.jpeg">
 </head>
 <body>
-    <h2>Chào mấy bro (tham quan my Github ở đây: <a href="https://github.com/Bright140">Bright140</a>)</h2>
+    <h2>Chào mấy bro (tham quan my Github ở đây: <a href="https://github.com/Bright140" target="_blank">Bright140</a>)</h2>
     <h3>
         I'm <span id="name" onmouseover="changer()" onmouseout="changer0()">Phan Su Bin</span>, 
         Currently I am studying at <span id="school">Hue University of Sciences</span>, 
@@ -18,7 +18,7 @@
     <p id="minute"></p>
     <p id="content">These are things I made myself:</p>
     <div class="profile">
-        <img src="Bright.jpeg" alt="">
+        <img src="Ragna.gif" alt="">
     </div>
     <div class="title-profile">
         <p id="title-pro"></p>
@@ -46,7 +46,7 @@
         <video id="video-content" controls>
             <source src="./video/To Be Hero X.mp4" type="video/mp4">
         </video>
-        <p id="title-video">' <span>To Be Hero X</span> ' Preview | Source: <a href="https://www.youtube.com/@MadeByBilibili">bilibili</a> x <a href="https://www.youtube.com/@aniplex">Aniplex</a></p>
+        <p id="title-video">" <span>To Be Hero X</span> " Preview | Source: <a href="https://www.youtube.com/@MadeByBilibili" target="_blank">bilibili</a> x <a href="https://www.youtube.com/@aniplex" target="_blank">Aniplex</a></p>
     </div>
     <div id="container">
         <div id="text1">
@@ -98,6 +98,55 @@
         </div>
         <p class="title-0">Results:</p>
         <p id="want"></p>
+    </div>
+    <div class="container-form">
+        <p>Input Infomation Form (are testing)</p>
+        <form>
+            <div id="l-1">
+                <label for="fname">Họ:</label>
+                <input type="text" id="fname" name="fname">
+            </div>
+            <div id="l-2">
+                <label for="lname">Tên:</label>
+                <input type="text" id="lname" name="lname">
+            </div>
+            <div id="l-3"> 
+                <label for="birtday">Ngày sinh:</label>
+                <input type="date" id="birtday" name="birtday">
+            </div>
+            <div id="l-4">
+                <label for="sex">Giới tính:</label>
+                <div>
+                    <div id="lt-1">
+                        <input type="radio" id="sex" name="sex" value="man">
+                        <span>Nam</span>
+                    </div>
+                    <div id="lt-2">
+                        <input type="radio" id="sex" name="sex" value="female">
+                        <span>Nữ</span>
+                    </div>
+                    <div id="lt-3">
+                        <input type="radio" id="sex" name="sex" value="threemanle">
+                        <span>Đồng tính</span>
+                    </div>
+                </div>
+            </div>
+            <div id="l-5">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div id="l-6">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address">
+            </div>
+            <div id="l-7">
+                <input type="submit" value="Gửi">
+            </div>
+            <div id="l-8">
+                <div></div>
+                <input type="file" name="avatar" multiple>
+            </div>
+        </form>
     </div>
     <script src="index.js" defer></script>
 </body>
