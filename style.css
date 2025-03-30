@@ -125,7 +125,7 @@ a:active {
     margin: 10px 0 0 450px;
 }
 .video-limitid > p > span {
-    font-style: italic;
+    font-weight: bold;
 }
 #container {
     width: 1050px;
@@ -275,4 +275,79 @@ a:active {
 #about {
     margin-top: 20px;
     font-style: italic;
+}
+.container-form {
+    width: 850px;
+    height: 360px;
+    margin: 100px 0 0 340px;
+}
+.container-form > p {
+    margin: 0 0 0 320px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.container-form > form {
+    width: 850px;
+    height: 330px;
+    margin-top: 5px;
+    border: 2px solid gray;
+}
+#l-1 {
+    margin: 20px 0 0 50px;
+}
+#l-1 > label,#l-2 > label,#l-3 > label,#l-4 > label,#l-5 > label,#l-6 > label {
+    font-size: 20px;
+}
+#l-1 > input,#l-2 > input {
+    width: 200px;
+    height: 30px;
+}
+#l-2 {
+    margin: -35px 0 0 350px;
+}
+#l-3,#l-6,#l-7 {
+    margin: 30px 0 0 50px;
+}
+#l-3 > input {
+    width: 135px;
+    height: 30px;
+}
+#l-4 {
+    margin: -32px 0 0 350px;
+}
+#l-4 > div {
+    margin: -20px 0 0 90px;
+}
+#l-4 > div > #lt-2,#l-4 > div > #lt-3 {
+    margin-top: 10px;
+}
+#l-4 > div > div > span {
+    font-size: 18px;
+}
+#l-5 {
+    margin: -25px 0 0 50px;
+}
+#l-5 > input {
+    width: 175px;
+    height: 30px;
+}
+#l-6 > input {
+    width: 300px;
+    height: 30px;
+}
+#l-7 > input {
+    width: 50px;
+    height: 30px;
+}
+#l-8 {
+    margin: -290px 0 0 650px;
+}
+#l-8 > div {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#l-8 > input {
+    margin-top: 15px;
 }
