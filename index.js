@@ -162,3 +162,50 @@ function mobile() {
     alert("Nếu bạn đang dùng mobile, thì vui lòng chuyển sang chế độ xoay ngang hoặc chế độ trang web cho máy tính để có trải nghiệm tốt hơn d=====(￣▽￣*)b");
 }
 document.getElementsByTagName("body")[0].onload= mobile;
+function off() {
+    alert("Đã mất kết nối internet o(￣┰￣*)ゞ");
+}
+function on() {
+    alert("Đã khôi phục kết nối internet \(￣︶￣*\))")
+}
+window.onoffline= off; window.ononline= on;
+function down(x,y) {
+    document.getElementById(x).style.color= y;
+}
+function doup(x,y,z) {
+    document.getElementById(x).firstElementChild.style.color= y;
+    document.getElementById(x).firstElementChild.style.backgroundColor= z;
+}
+function hovere(x,y) {
+    document.getElementById(x).firstElementChild.style.backgroundColor= y;
+}
+function seop(x) {
+    document.getElementById("op-3").style.backgroundColor= x;
+}
+function look() {
+    const t= ['royalblue','palevioletred'];
+    setTimeout(seop,0,t[0]);
+    setTimeout(seop,1000,t[1]);
+}
+setInterval(look,1500);
+function fave(x) {
+    document.getElementById("favecolor").style.color= x;
+}
+function inner() {
+    const v=['red','orange','yellow','green','blue','purple','pink'];
+    setTimeout(fave,0,v[0]);
+    setTimeout(fave,500,v[1]);
+    setTimeout(fave,1000,v[2]);
+    setTimeout(fave,1500,v[3]);
+    setTimeout(fave,2000,v[4]);
+    setTimeout(fave,2500,v[5]);
+    setTimeout(fave,3000,v[6]);
+}
+setInterval(inner,3500);
+function avatarfo() {
+    const imgs= new FileReader();
+    imgs.readAsDataURL(document.getElementById("avatar").files[0]);
+    imgs.onload= function() {
+        document.getElementById("avatar-form").src= imgs.result;
+    };
+}
