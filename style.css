@@ -324,7 +324,7 @@ a:active {
 #l-4 > select > option {
     margin-top: -10px;
 }
-#op-1,#op-2 {
+#op-1,#op-2,#op-3 {
     color: white;
 }
 #op-1 {
@@ -333,18 +333,12 @@ a:active {
 #op-2 {
     background-color: palevioletred;
 }
-#op-3 {
-    color: white;
-}
-#l-5 {
+#l-5,#l-6 {
     margin: 35px 0 0 50px;
 }
 #l-5 > input {
     width: 175px;
     height: 30px;
-}
-#l-6 {
-    margin: 35px 0 0 50px;
 }
 #l-6 > input {
     width: 300px;
@@ -377,9 +371,6 @@ a:active {
 #l-8 > input {
     margin: 10px 0 0 25px;
     width: 106px;
-    border: 2px solid gray;
-    border-radius: 5px;
-    font-size: 17px;
 }
 #l-8 > div > img {
     width: 100%;
@@ -395,7 +386,7 @@ a:active {
 #l-10 {
     margin: -30px 0 0 150px;
 }
-#l-1 > input,#l-2 > input,#l-5 > input,#l-6 > input,#l-3 > input,#l-9 > input,#l-4 > select {
+#l-1 > input,#l-2 > input,#l-5 > input,#l-6 > input,#l-3 > input,#l-9 > input,#l-4 > select,#l-8 > input {
     border: 2px solid rgb(145, 145, 145);
     border-radius: 5px;
     font-size: 17px;
@@ -416,9 +407,6 @@ a:active {
 #l-10 > input {
     border: 2px solid red;
     color: red;
-}
-#l-10 > input:hover {
-    background-color: rgb(145, 0, 0);
 }
 #l-7 > input,#l-10 > input {
     border-radius: 5px;
