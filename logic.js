@@ -1,11 +1,3 @@
-function changer() {
-    document.getElementById("name").style.color= "red";
-    document.getElementById("name").style.fontStyle= "italic";
-}
-function changer0() {
-    document.getElementById("name").style.color= "darkslateblue";
-    document.getElementById("name").style.fontStyle= "normal";
-}
 function changer1() {
     document.getElementById("like").innerHTML= '&#10084';
 }
