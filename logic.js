@@ -60,15 +60,21 @@ function color(x) {
     const c= ["red","orange","rgb(200, 200, 0)","green","blue","indigo","palevioletred"];
     return c[x];
 }
+function inline(x,y,z,w) {
+    document.getElementById("content-option-1").innerHTML= x;
+    document.getElementById("content-option-3").innerHTML= y;
+    document.getElementById("content-option-2").innerHTML= z;
+    document.getElementById("option-3").style.backgroundColor= w;
+    document.getElementById("option-1").style.backgroundColor= w;
+}
 function time() {
     const tn= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     const t= new Date();
     tnv= tn[t.getDay()];
     y= t.getFullYear(); m= ap0(t.getMonth()+1); d= ap0(t.getDate());
     h= ap0(t.getHours()); n= ap0(t.getMinutes()); s= ap0(t.getSeconds());
-    gmt= tnv+' '+y+'/'+m+'/'+d+' - '+h+':'+n+':'+s;
-    document.getElementById("minute").innerHTML= gmt;
-    document.getElementById("minute").style.color= color(t.getDay());
+    year= m +'/'+ y; hour= tnv+' '+'-'+' '+h+':'+n+':'+s; day= d; backcolor= color(t.getDay());
+    inline(year,hour,day,backcolor);
 }
 setInterval(time,1000);
 function element1() {
@@ -164,9 +170,16 @@ window.onoffline= off; window.ononline= on;
 function down(x,y) {
     document.getElementById(x).style.color= y;
 }
+function downup(x,y,z) {
+    document.getElementById(x).style.color= y;
+    document.getElementById(x).style.backgroundColor= z;
+}
 function doup(x,y,z) {
     document.getElementById(x).firstElementChild.style.color= y;
     document.getElementById(x).firstElementChild.style.backgroundColor= z;
+}
+function respan() {
+    document.getElementById("avatar-form").src= "";
 }
 function hovere(x,y) {
     document.getElementById(x).firstElementChild.style.backgroundColor= y;
