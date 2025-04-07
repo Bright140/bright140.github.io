@@ -14,8 +14,20 @@
         Currently I am studying at <span id="school">Hue University of Sciences</span>, 
         I really <span id="like" onmouseover="changer1()" onmouseout="changer2()">love</span> programming and Im <span class="title">trying to be better</span>
     </h3>
-    <span class="UTC">Clock: </span>
-    <p id="minute"></p>
+    <div class="container-calendar">
+        <div class="calendar">
+            <div id="option-1">
+                <p id="content-option-1"></p>
+            </div>
+            <div id="option-2">
+                <p id="content-option-2"></p>
+            </div>
+            <div id="option-3">
+                <p id="content-option-3"></p>
+            </div>
+        </div>
+        <p>Calendar</p>
+    </div>
     <p id="content">These are things I made myself:</p>
     <div class="profile">
         <img src="Ragna.gif" alt="">
@@ -43,10 +55,12 @@
         </div>
     </div>
     <div class="video-limitid">
-        <video id="video-content" controls>
-            <source src="./video/To Be Hero X.mp4" type="video/mp4">
-        </video>
-        <p id="title-video">" <span>To Be Hero X</span> " Preview | Source: <a id="bilibili" href="https://www.youtube.com/@MadeByBilibili" target="_blank">bilibili</a> x <a id="aniplex" href="https://www.youtube.com/@aniplex" target="_blank">Aniplex</a></p>
+        <div>
+            <video id="video-content" controls>
+                <source src="./video/To Be Hero X.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p id="title-video">" <span>To Be Hero X</span> " Preview | Source: <a id="bilibili" href="https://www.youtube.com/@MadeByBilibili" target="_blank">Bilibili</a> x <a id="aniplex" href="https://www.youtube.com/@aniplex" target="_blank">Aniplex</a></p>
     </div>
     <div id="container">
         <div id="text1">
@@ -101,7 +115,7 @@
     </div>
     <div class="container-form">
         <p>Input Infomation Form</p>
-        <form action="https://formsubmit.co/subinphan.1110@gmail.com" method="post">
+        <form action="https://formsubmit.co/subinphan.1110@gmail.com" method="post" onreset="respan()">
             <div id="l-1">
                 <label for="fname">Họ:</label>
                 <input type="text" id="fname" name="fname" oninput="down('fname','green')" onchange="down('fname','red')" onmousedown="down('fname','blue')" required placeholder="Nhập vào đây" pattern="^*[A-Za-z\s]$" title="Vui lòng nhập đúng định dạng 'Họ'" autocomplete="on">
@@ -135,17 +149,20 @@
                 <input type="text" id="address" name="address" oninput="down('address','green')" onchange="down('address','red')" onmousedown="down('address','blue')" placeholder="Nhập vào đây" autocomplete="on">
             </div>
             <div id="l-7">
-                <input type="submit" value="Gửi" onmousedown="doup('l-7','red','rgb(145, 0, 0)')" onmouseup="doup('l-7','green','rgb(210, 210, 210)')" onmouseover="hovere('l-7','greenyellow')" onmouseout="hovere('l-7','rgb(210, 210, 210)')">
+                <input type="submit" value="Gửi" onmousedown="doup('l-7','red','rgb(145, 0, 0)')" onmouseup="doup('l-7','green','rgb(210, 210, 210)')" onmouseover="hovere('l-7','greenyellow')" onmouseout="hovere('l-7','rgb(170, 170, 170)')">
             </div>
             <div id="l-10">
-                <input type="reset" value="Đặt lại" onmousedown="doup('l-10','green','greenyellow')" onmouseup="doup('l-10','red','rgb(210, 210, 210)')" onmouseover="hovere('l-10','rgb(145, 0, 0)')" onmouseout="hovere('l-10','rgb(210, 210, 210)')">
+                <input type="reset" value="Đặt lại" onmousedown="doup('l-10','green','greenyellow')" onmouseup="doup('l-10','red','rgb(210, 210, 210)')" onmouseover="hovere('l-10','rgb(145, 0, 0)')" onmouseout="hovere('l-10','rgb(170, 170, 170)')">
             </div>
             <div id="l-8">
                 <div>
                     <img id="avatar-form" src="" alt="">
                 </div>
-                <label for="avatar">| <span>Avatar</span> |</label>
-                <input type="file" name="avatar" id="avatar" accept="image/*" onchange="avatarfo()" title="Chọn ảnh đại diện">
+                <p for="avatar">| <span>Avatar</span> |</p>
+                <label id="avatar-label" for="avatar" onmousedown="downup('avatar-label','white','black')" onmouseup="downup('avatar-label','black','white')" onmouseover="hovere('avatar-label','greenyellow')" onmouseout="hovere('avatar-label','black')">
+                    Chọn ảnh
+                    <input type="file" name="avatar" id="avatar" accept="image/*" onchange="avatarfo()" title="Chọn ảnh đại diện">
+                </label>
             </div>
         </form>
     </div>
