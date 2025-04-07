@@ -11,17 +11,17 @@ body {
     color: rgb(0, 255, 255);
     font-style: italic;
 }
-a {
+#github {
     text-decoration: none;
     color: cadetblue;
 }
-a:hover {
+#github:hover {
     text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-color: cornflowerblue;
     color: chartreuse;
 }
-a:active {
+#github:active {
     color: crimson;
 }
 .title {
@@ -133,6 +133,30 @@ a:active {
 }
 .video-limitid > p > span {
     font-weight: bold;
+}
+#bilibili {
+    text-decoration: none;
+    color: rgb(185, 0, 0);
+}
+#bilibili:hover {
+    border-left: 2px solid rgb(0, 132, 255);
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 160, 0);
+}
+#bilibili:active {
+    color: rgb(0, 132, 255);
+}
+#aniplex {
+    text-decoration: none;
+    color: rgb(0, 132, 255);
+}
+#aniplex:hover {
+    border-right: 2px solid rgb(185, 0, 0);
+    text-decoration: overline;
+    text-decoration-color: rgb(0, 160, 0);
+}
+#aniplex:active {
+    color: rgb(185, 0, 0);
 }
 #container {
     width: 1050px;
