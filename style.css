@@ -33,14 +33,51 @@ body {
     text-decoration: none;
 }
 #content {
+    margin-top: -95px;
     font-size: 15px;
     font-weight: 600;
+}
+.container-calendar {
+    width: 150px;
+    height: 190px;
+    margin: -90px 0 0 1140px;
+}
+.container-calendar > p {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 10px 0 0 40px;
+}
+.calendar {
+    width: 150px;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 150px;
+    grid-template-rows: 35px 80px 35px;
+    border: 3px solid rgb(114, 114, 114);
+    box-shadow: 0px 0px 5px 1px black;
+}
+#option-2 {
+    border-top: 2px dashed gray;
+    border-bottom: 2px dashed gray;
+}
+#option-1 > p,#option-2 > p,#option-3 > p {
+    width: 150px;
+}
+#option-1 > p {
+    margin: 10px 45px;
+}
+#option-2 > p {
+    font-size: 50px;
+    margin: 15px 45px;
+}
+#option-3 > p {
+    margin: 10px 6px;
 }
 .profile {
     width: 150px;
     height: 150px;
     border-radius: 10px;
-    margin: -160px 0 0 1345px;
+    margin: -126px 0 0 1345px;
     border-radius: 12px;
     border: 2px solid black;
 }
@@ -56,10 +93,6 @@ body {
     color: darkslateblue;
     font-weight: bold;
 }
-.UTC {
-    font-size: 15px;
-    font-weight: bold;
-}
 #name {
     color: darkslateblue;
 }
@@ -73,14 +106,10 @@ body {
     text-decoration: underline;
     text-decoration-color: blue;
 }
-#minute {
-    display: inline;
-    font-style: italic;
-}
 .title-music {
     width: 1060px;
     height: 410px;
-    margin: -30px 0 0 230px;
+    margin: 10px 0 0 230px;
 }
 .title-music > p {
     margin: 0 0 0 460px;
@@ -123,10 +152,15 @@ body {
     height: 770px;
     margin: 100px 0 0 140px;
 }
-.video-limitid > video {
+.video-limitid > div {
+    width: 1250px;
+    height: 726px;
+    border: 4px dashed gray;
+}
+.video-limitid > div > video {
     width: 1250px;
     height: 750px;
-    margin-top: -25px;
+    margin-top: -24px;
 }
 .video-limitid > p {
     margin: 10px 0 0 450px;
@@ -145,6 +179,7 @@ body {
 }
 #bilibili:active {
     color: rgb(0, 132, 255);
+    border-left-color: rgb(185, 0, 0);
 }
 #aniplex {
     text-decoration: none;
@@ -157,6 +192,7 @@ body {
 }
 #aniplex:active {
     color: rgb(185, 0, 0);
+    border-left-color: rgb(0, 132, 255);
 }
 #container {
     width: 1050px;
@@ -275,11 +311,12 @@ body {
     justify-content: space-between;
 }
 #sword,#polearm,#claymore,#catalyst,#bow {
-    border: 3px solid gray;
+    border: 3px solid rgb(160, 160, 160);
     margin-top: 0;
     width: 130px;
     height: 130px;
     border-radius: 15px;
+    background-color: black;
 }
 #S1,#P2,#C3,#C4,#B5 {
     width: 128px;
@@ -298,6 +335,7 @@ body {
     border-radius: 10px;
     border: 2px dotted black;
     margin: 25px 0 0 280px;
+    box-shadow: 0px 0px 2px 1px black;
 }
 #want {
     width: 120px;
@@ -392,21 +430,26 @@ body {
     border: 2px solid black;
     border-radius: 10px;
 }
-#l-8 > label {
-    display: block;
+#l-8 > p {
     margin: 5px 0 0 45px;
 }
-#l-8 > label > span {
+#l-8 > p > span {
     font-weight: bold;
 }
-#l-8 > input {
-    margin: 10px 0 0 25px;
-    width: 106px;
+#l-8 > label {
+    display: block;
+    width: 80px;
+    height: 25px;
+    margin: 10px 0 0 35px;
+    padding: 5px 0 0 5px;
+}
+#l-8 > label > input {
+    display: none;
 }
 #l-8 > div > img {
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 #l-9 {
     margin: -35px 0 0 350px;
@@ -417,10 +460,13 @@ body {
 #l-10 {
     margin: -30px 0 0 150px;
 }
-#l-1 > input,#l-2 > input,#l-5 > input,#l-6 > input,#l-3 > input,#l-9 > input,#l-4 > select,#l-8 > input {
+#l-1 > input,#l-2 > input,#l-5 > input,#l-6 > input,#l-3 > input,#l-9 > input,#l-4 > select,#l-8 > label {
     border: 2px solid rgb(145, 145, 145);
     border-radius: 5px;
     font-size: 17px;
+}
+#l-1 > input:focus,#l-2 > input:focus,#l-5 > input:focus,#l-6 > input:focus,#l-3 > input:focus,#l-4 > select:focus,#l-9 > input:focus,#l-8 > div,#l-8 > label:hover {
+    box-shadow: 0px 0px 5px 1px black;
 }
 #l-3 > input {
     color: black;
@@ -442,5 +488,5 @@ body {
 #l-7 > input,#l-10 > input {
     border-radius: 5px;
     font-size: 17px;
-    background-color: rgb(210, 210, 210);
+    background-color: rgb(170, 170, 170);
 }
