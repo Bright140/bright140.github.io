@@ -148,17 +148,17 @@ body {
     border-radius: 12px;
 }
 .video-limitid {
-    width: 1250px;
-    height: 770px;
-    margin: 100px 0 0 140px;
+    width: 1330px;
+    height: 800px;
+    margin: 100px 0 0 90px;
 }
 .video-limitid > video {
-    width: 1250px;
+    width: 1330px;
     height: 750px;
-    margin-top: -23px;
+    border: 4px dashed gray;
 }
 .video-limitid > p {
-    margin: 10px 0 0 450px;
+    margin: 10px 0 0 480px;
 }
 .video-limitid > p > span {
     font-weight: bold;
