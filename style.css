@@ -152,15 +152,10 @@ body {
     height: 770px;
     margin: 100px 0 0 140px;
 }
-.video-limitid > div {
-    width: 1250px;
-    height: 726px;
-    border: 4px dashed gray;
-}
-.video-limitid > div > video {
+.video-limitid > video {
     width: 1250px;
     height: 750px;
-    margin-top: -24px;
+    margin-top: -23px;
 }
 .video-limitid > p {
     margin: 10px 0 0 450px;
