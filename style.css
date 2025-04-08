@@ -6,6 +6,7 @@ body {
 }
 #name {
     color: darkslateblue;
+    transition: color 2s ease;
 }
 #name:hover {
     color: rgb(0, 255, 255);
@@ -25,12 +26,16 @@ body {
     color: crimson;
 }
 .title {
-    text-decoration: line-through;
+    text-decoration-line: line-through;
     text-decoration-color: gray;
     color: blueviolet;
+    font-size: 18px;
+    transition: text-decoration-line 0.5s ease-in-out 1s, color 1s ease-in-out, font-size 1.5s ease-in-out 1s;
 }
 .title:hover {
-    text-decoration: none;
+    text-decoration-line: none;
+    color: red;
+    font-size: 22px;
 }
 #content {
     margin-top: -95px;
