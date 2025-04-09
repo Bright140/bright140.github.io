@@ -76,7 +76,8 @@ body {
     margin: 15px 45px;
 }
 #option-3 > p {
-    margin: 10px 6px;
+    font-size: 14px;
+    margin: 10px 5px;
 }
 .profile {
     width: 150px;
