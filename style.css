@@ -33,9 +33,9 @@ body {
     transition: color 1s ease-in-out, font-size 1.5s ease-in-out 1s;
 }
 .title:hover {
-    text-decoration-line: none;
     color: red;
     font-size: 22px;
+    text-decoration-line: none;
 }
 #content {
     margin-top: -95px;
