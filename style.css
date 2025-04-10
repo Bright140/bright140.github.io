@@ -26,16 +26,27 @@ body {
     color: crimson;
 }
 .title {
-    text-decoration: line-through;
-    text-decoration-color: gray;
     color: blueviolet;
     font-size: 18px;
     transition: color 1s ease-in-out, font-size 1.5s ease-in-out 1s;
 }
+.title::after {
+    content: "";
+    position: absolute;
+    width: 154px;
+    height: 2px;
+    margin-top: 10px;
+    margin-left: -154px;
+    background-color: gray;
+    transition: width 0.5s ease 1s, margin-left 1.5s ease-in-out 1s;
+}
+.title:hover::after {
+    width: 0px;
+    margin-left: -165px;
+}
 .title:hover {
     color: red;
     font-size: 22px;
-    text-decoration: none;
 }
 #content {
     margin-top: -95px;
@@ -74,10 +85,6 @@ body {
 #option-2 > p {
     font-size: 50px;
     margin: 15px 45px;
-}
-#option-3 > p {
-    font-size: 14px;
-    margin: 10px 5px;
 }
 .profile {
     width: 150px;
@@ -154,14 +161,14 @@ body {
     border-radius: 12px;
 }
 .video-limitid {
-    width: 1330px;
+    width: 1331px;
     height: 800px;
     margin: 100px 0 0 90px;
 }
 .video-limitid > video {
     width: 1330px;
     height: 750px;
-    border: 4px dashed gray;
+    border: 3px dashed gray;
 }
 .video-limitid > p {
     margin: 10px 0 0 480px;
