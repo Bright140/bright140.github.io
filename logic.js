@@ -174,7 +174,7 @@ function roll() {
     setTimeout(reset,3000);
 }
 function mobile() {
-    alert("Nếu bạn đang dùng mobile, thì vui lòng chuyển sang chế độ xoay ngang hoặc chế độ trang web cho máy tính để có trải nghiệm tốt hơn d=====(￣▽￣*)b");
+    alert("Trang web này chỉ dành cho PC, Trang web dành cho mobile sẽ được phát hành trong tương lai gần o(*￣▽￣*)o");
 }
 document.getElementsByTagName("body")[0].onload= mobile;
 function off() {
