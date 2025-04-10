@@ -67,6 +67,22 @@ function inline(x,y,z,w) {
     document.getElementById("option-3").style.backgroundColor= w;
     document.getElementById("option-1").style.backgroundColor= w;
 }
+function stylecalendar(x) {
+    const tn= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    if(x==tn[0]||x==tn[1]||x==tn[5]) {
+        document.getElementById("content-option-3").style.margin= "10px 8px";
+    }
+    if(x== tn[2]) {
+        document.getElementById("content-option-3").style.margin= "10px 6px";
+    }
+    if(x== tn[4]||x== tn[6]) {
+        document.getElementById("content-option-3").style.margin= "10px 3px";
+    }
+    if(x== tn[3]) {
+        document.getElementById("content-option-3").style.margin= "10px 4px";
+        document.getElementById("content-option-3").style.fontSize= "14px";
+    }
+}
 function time() {
     const tn= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     const t= new Date();
@@ -75,6 +91,7 @@ function time() {
     h= ap0(t.getHours()); n= ap0(t.getMinutes()); s= ap0(t.getSeconds());
     year= m +'/'+ y; hour= tnv+' '+'-'+' '+h+':'+n+':'+s; day= d; backcolor= color(t.getDay());
     inline(year,hour,day,backcolor);
+    stylecalendar(tnv);
 }
 setInterval(time,1000);
 function element1() {
