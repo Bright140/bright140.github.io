@@ -69,14 +69,20 @@ function inline(x,y,z,w) {
 }
 function stylecalendar(x) {
     const tn= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-    if(x==tn[0]||x==tn[1]||x==tn[5]) {
+    if(x==tn[1]) {
         document.getElementById("content-option-3").style.margin= "10px 8px";
+    }
+    if(x==tn[0]) {
+        document.getElementById("content-option-3").style.margin= "10px 9px";
+    }
+    if(x==tn[5]) {
+        document.getElementById("content-option-3").style.margin= "10px 15px";
     }
     if(x== tn[2]) {
         document.getElementById("content-option-3").style.margin= "10px 6px";
     }
     if(x== tn[4]||x== tn[6]) {
-        document.getElementById("content-option-3").style.margin= "10px 3px";
+        document.getElementById("content-option-3").style.margin= "10px 4px";
     }
     if(x== tn[3]) {
         document.getElementById("content-option-3").style.margin= "10px 4px";
@@ -210,20 +216,6 @@ function look() {
     setTimeout(seop,1000,t[1]);
 }
 setInterval(look,1500);
-function fave(x) {
-    document.getElementById("favecolor").style.color= x;
-}
-function inner() {
-    const v=['red','orange','yellow','green','blue','purple','pink'];
-    setTimeout(fave,0,v[0]);
-    setTimeout(fave,500,v[1]);
-    setTimeout(fave,1000,v[2]);
-    setTimeout(fave,1500,v[3]);
-    setTimeout(fave,2000,v[4]);
-    setTimeout(fave,2500,v[5]);
-    setTimeout(fave,3000,v[6]);
-}
-setInterval(inner,3500);
 function avatarfo() {
     const imgs= new FileReader();
     imgs.readAsDataURL(document.getElementById("avatar").files[0]);
