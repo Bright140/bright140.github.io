@@ -498,3 +498,22 @@ body {
     font-size: 17px;
     background-color: rgb(170, 170, 170);
 }
+@keyframes color {
+    0% {color: red;}
+    10% {color: orange;}
+    20% {color: gold;}
+    30% {color: green;}
+    40% {color: blue;}
+    50% {color: darkcyan;}
+    60% {color: purple;}
+    70% {color: pink;}
+    80% {color: darkslategray;}
+    90% {color: darkgray;}
+    100% {color: red;}
+}
+#favecolor {
+    color: red;
+    animation-name: color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
