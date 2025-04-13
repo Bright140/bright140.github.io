@@ -29,26 +29,6 @@ function namers() {
     setTimeout(apha,3200,stra[0]);
 }
 setInterval(namers,3600);
-function WFSE1(a,b,c,d,x,y,z,w) {
-    document.getElementById(a).style.backgroundColor= x;
-    document.getElementById(a).style.borderColor= y;
-    document.getElementById(b).innerHTML= z;
-    document.getElementById(b).style.fontStyle= "italic";
-    document.getElementById(b).style.color= y;
-    document.getElementById(c).innerHTML= w;
-    document.getElementById(c).style.fontSize= "20px";
-    document.getElementById(c).style.color= y;
-    document.getElementById(d).style.display= "block";
-}
-function WFSE2(a,b,c,d,x,y,z) {
-    document.getElementById(a).style.backgroundColor= x;
-    document.getElementById(a).style.borderColor= y;
-    document.getElementById(b).innerHTML= z;
-    document.getElementById(b).style.fontStyle= "normal";
-    document.getElementById(b).style.color= y;
-    document.getElementById(c).innerHTML= "";
-    document.getElementById(d).style.display= "none";
-}
 function ap0(x) {
     if(x<10) {
         return '0'+ x;
@@ -100,38 +80,75 @@ function time() {
     stylecalendar(tnv);
 }
 setInterval(time,1000);
-function element1() {
-    WFSE1('text1','Wind','Wt1','PW1','Green','rgb(0, 255, 0)','Wind (Phong)','Gentle as Wind');
-    WFSE1('text2','Fire','Ft2','PF2','red','rgb(120, 0, 0)','Fire (Hoả)','Strong as Fire');
-    WFSE1('text6','Earth','Et6','PE6','yellow','rgb(152, 152, 0)','Earth (Nham)','Hard as Earth');
-    WFSE1('text7','Water','Wt7','PW7','blue','rgb(110, 110, 200)','Water (Thủy)','Flexible as Water');
-    document.getElementById('text3').style.backgroundColor= 'White';
-    document.getElementById('text3').style.borderColor= 'black';
-    document.getElementById('text3').style.borderStyle= 'solid';
-    document.getElementById('Synthetic').innerHTML= 'Gosei';
-    document.getElementById('Synthetic').style.fontStyle= 'normal';
-    document.getElementById('Synthetic').style.margin= '90px 0 0 145px';
-    document.getElementById('Synthetic').style.color= 'black';
-    document.getElementById('St3').innerHTML= '';
-}
-function element2() {
-    WFSE2('text1','Wind','Wt1','PW1','White','Green','Kaze');
-    WFSE2('text2','Fire','Ft2','PF2','white','red','Hi');
-    WFSE2('text6','Earth','Et6','PE6','White','yellow','Tochi');
-    WFSE2('text7','Water','Wt7','PW7','White','blue','Mizu');
-    document.getElementById('text3').style.backgroundColor= 'black';
-    document.getElementById('text3').style.borderColor= 'red yellow blue green';
-    document.getElementById('text3').style.borderStyle= 'dashed';
+function element3s() {
+    document.getElementById("Synthetic").innerHTML= 'Synthetic (Vô Hạn)';
     document.getElementById('Synthetic').style.fontStyle= 'italic';
-    document.getElementById('Synthetic').style.color= 'white';
-    document.getElementById('Synthetic').innerHTML= 'Synthetic (Vô Hạn)';
     document.getElementById('Synthetic').style.margin= '60px 0 0 90px';
     document.getElementById('St3').innerHTML= '0 Infinity Element 0';
-    document.getElementById('St3').style.fontSize= '20px';
-    document.getElementById('St3').style.color= 'white';
+    document.getElementById('Synthetic').style.color= 'white';
 }
-setInterval(element1,3000);
-setInterval(element2,6000);
+function element3r() {
+    document.getElementById("Synthetic").innerHTML= 'Gosei';
+    document.getElementById('Synthetic').style.fontStyle= 'normal';
+    document.getElementById('Synthetic').style.margin= '90px 0 0 140px';
+    document.getElementById('St3').innerHTML= '';
+    document.getElementById('Synthetic').style.color= 'black';
+}
+function element0s(a,b,c,x,y,z) {
+    document.getElementById(a).innerHTML= x;
+    document.getElementById(a).style.fontStyle= 'italic';
+    document.getElementById(a).style.color= z;
+    document.getElementById(b).innerHTML= y;
+    document.getElementById(c).style.display= 'block';
+}
+function element0r(a,b,c,x,y,z) {
+    document.getElementById(a).innerHTML= x;
+    document.getElementById(a).style.fontStyle= 'normal';
+    document.getElementById(a).style.color= z;
+    document.getElementById(b).innerHTML= y;
+    document.getElementById(c).style.display= 'none';
+}
+function element3Ss() {
+    document.getElementById("text3").style.animationName= 'Synthetics';
+    setTimeout(element3s,2500);
+}
+function element3Sr() {
+    document.getElementById("text3").style.animationName= 'Synthetict';
+    setTimeout(element3r,2500);
+}
+function element16s() {
+    document.getElementById("text1").style.animationName= 'Winds';
+    document.getElementById("text6").style.animationName= 'Earths';
+    setTimeout(element0s,2500,'Wind','Wt1','PW1','Wind (Phong)','Gentle as Wind','rgb(0, 255, 0)');
+    setTimeout(element0s,2500,'Earth','Et6','PE6','Earth (Nham)','Hard as Earth','rgb(152, 152, 0)');
+}
+function element16r() {
+    document.getElementById("text1").style.animationName= 'Windt';
+    document.getElementById("text6").style.animationName= 'Eartht';
+    setTimeout(element0r,2500,'Wind','Wt1','PW1','Kaze','','green');
+    setTimeout(element0r,2500,'Earth','Et6','PE6','Tochi','','yellow');
+}
+function element27s() {
+    document.getElementById("text2").style.animationName= 'Fires';
+    document.getElementById("text7").style.animationName= 'Waters';
+    setTimeout(element0s,2500,'Fire','Ft2','PF2','Fire (Hoả)','Strong as Fire','rgb(120, 0, 0)');
+    setTimeout(element0s,2500,'Water','Wt7','PW7','Water (Thủy)','Flexible as Water','rgb(110, 110, 200)');
+}
+function element27r() {
+    document.getElementById("text2").style.animationName= 'Firet';
+    document.getElementById("text7").style.animationName= 'Watert';
+    setTimeout(element0r,2500,'Fire','Ft2','PF2','Hi','','red');
+    setTimeout(element0r,2500,'Water','Wt7','PW7','Mizu','','blue');
+}
+function replay() {
+    setTimeout(element3Ss,0);
+    setTimeout(element16s,4000);
+    setTimeout(element27s,8000);
+    setTimeout(element27r,15000);
+    setTimeout(element16r,19000);
+    setTimeout(element3Sr,23000);
+}
+setInterval(replay,30000);
 function random(min,max) {
     return Math.floor(Math.random()*(max-min+1));
 }
