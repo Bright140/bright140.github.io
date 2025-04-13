@@ -202,20 +202,39 @@ body {
     color: rgb(185, 0, 0);
     border-left-color: rgb(0, 132, 255);
 }
+.container-element {
+    width: 1050px;
+    height: 680px;
+    margin: 100px 0 0 235px;
+}
+.container-element > p {
+    width: 125px;
+    height: 30px;
+    margin-left: 460px;
+    padding: 10px 0 0 10px;
+    font-size: 18px;
+    border: 2px solid;
+    border-color: red yellow blue green;
+}
 #container {
     width: 1050px;
     height: 600px;
-    margin: 100px 0 0 235px;
     display: grid;
     grid-template-columns: 350px 350px 350px;
     grid-template-rows: 200px 200px 200px;
 }
 #text1,#text2,#text6,#text7,#text3 {
     border-width: 3px;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 #Wind,#Fire,#Earth,#Water,#Synthetic {
     font-size: 20px;
     font-weight: 600;
+}
+#Wt1,#Ft2,#St3,#Et6,#Wt7 {
+    font-size: 20px;
 }
 #text1 {
     grid-row: 1/span 2;
@@ -225,6 +244,29 @@ body {
 #Wind {
     margin: 190px 0 0 150px;
     color: green;
+}
+#Wt1 {
+    color: rgb(0, 255, 0);
+}
+@keyframes Winds {
+    0% {
+        background-color: white;
+        border-color: green;
+    }
+    100% {
+        background-color: green;
+        border-color: rgb(0, 255, 0);
+    }
+}
+@keyframes Windt {
+    0% {
+        background-color: green;
+        border-color: rgb(0, 255, 0);
+    }
+    100% {
+        background-color: white;
+        border-color: green;
+    }
 }
 #Wt1,#Et6 {
     margin: 50px 0 0 70px;
@@ -243,6 +285,29 @@ body {
 #Fire {
     margin: 100px 0 0 340px;
     color: red
+}
+#Ft2 {
+    color: rgb(120, 0, 0);
+}
+@keyframes Fires {
+    0% {
+        background-color: white;
+        border-color: red;
+    }
+    100% {
+        background-color: red;
+        border-color: rgb(120, 0, 0);
+    }
+}
+@keyframes Firet {
+    0% {
+        background-color: red;
+        border-color: rgb(120, 0, 0);
+    }
+    100% {
+        background-color: white;
+        border-color: red;
+    }
 }
 #Ft2,#Wt7 {
     margin: -20px 0 0 135px;
@@ -263,6 +328,29 @@ body {
     margin: 190px 0 0 150px;
     color: yellow;
 }
+#Et6 {
+    color: rgb(152, 152, 0);
+}
+@keyframes Earths {
+    0% {
+        background-color: white;
+        border-color: yellow;
+    }
+    100% {
+        background-color: yellow;
+        border-color: rgb(152, 152, 0);
+    }
+}
+@keyframes Eartht {
+    0% {
+        background-color: yellow;
+        border-color: rgb(152, 152, 0);
+    }
+    100% {
+        background-color: white;
+        border-color: yellow;
+    }
+}
 #text7 {
     grid-column: 1/span 2;
     grid-row: 3/span 1;
@@ -273,22 +361,65 @@ body {
     margin: 100px 0 0 330px;
     color: blue;
 }
+#Wt7 {
+    color: rgb(110, 110, 200);
+}
+@keyframes Waters {
+    0% {
+        background-color: white;
+        border-color: blue;
+    }
+    100% {
+        background-color: blue;
+        border-color: rgb(110, 110, 200);
+    }
+}
+@keyframes Watert {
+    0% {
+        background-color: blue;
+        border-color: rgb(110, 110, 200);
+    }
+    100% {
+        background-color: white;
+        border-color: blue;
+    }
+}
 #text3 {
     grid-column: 2/span 1;
     grid-row: 2/span 1;
-    background-color: black;
-    border-style: dashed;
-    border-color: red yellow blue green;
+    border-style: solid;
+    border-color: black;
 }
 #Synthetic {
-    margin: 60px 0 0 90px;
-    font-style: italic;
-    color: white;
+    margin: 90px 0 0 140px;
 }
 #St3 {
     margin: 40px 0 0 95px;
-    font-size: 20px;
     color: white;
+}
+@keyframes Synthetics {
+    0% {
+        background-color: white;
+        border-style: solid;
+        border-color: black;
+    }
+    100% {
+        background-color: black;
+        border-style: dashed;
+        border-color: red yellow blue green;
+    }
+}
+@keyframes Synthetict {
+    0% {
+        background-color: black;
+        border-style: dashed;
+        border-color: red yellow blue green;
+    }
+    100% {
+        background-color: white;
+        border-style: solid;
+        border-color: black;
+    }
 }
 .container-0 {
     width: 1100px;
