@@ -582,9 +582,34 @@ body {
     height: 25px;
     margin: 10px 0 0 35px;
     padding: 5px 0 0 5px;
+    position: relative;
 }
 #l-8 > label > input {
     display: none;
+}
+#l-8 > label > span {
+    display: none;
+    position: absolute;
+    width: 150px;
+    font-size: 14px;
+    background-color: gray;
+    border-radius: 5px;
+    color: black;
+    box-shadow: 0px 0px 5px 2px gray;
+    left: -30px;
+    top: 50px;
+}
+#l-8 > label > span::after {
+    content: "";
+    position: absolute;
+    border-width: 7px;
+    border-style: dashed;
+    border-color: transparent transparent gray transparent;
+    left: 70px;
+    bottom: 53px;
+}
+#l-8 > label:hover > span {
+    display: block;
 }
 #l-8 > div > img {
     width: 100%;
