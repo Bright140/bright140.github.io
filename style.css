@@ -78,13 +78,14 @@ body {
 }
 #option-1 > p,#option-2 > p,#option-3 > p {
     width: 150px;
+    text-align: center;
 }
-#option-1 > p {
-    margin: 10px 45px;
+#option-1 > p,#option-3 > p {
+    margin: 10px 0;
 }
 #option-2 > p {
     font-size: 50px;
-    margin: 15px 45px;
+    margin: 15px 0;
 }
 .profile {
     width: 150px;
