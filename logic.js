@@ -176,6 +176,55 @@ function roll() {
     start();
     setTimeout(reset,3000);
 }
+function lr_heart_s() {
+    document.getElementById("b1").style.animationName= "bl18s";
+    document.getElementById("r1").style.animationName= "br18s";
+    document.getElementById("b2").style.animationName= "bl26s";
+    document.getElementById("r2").style.animationName= "br26s";
+    document.getElementById("b3").style.animationName= "bl3s";
+    document.getElementById("r3").style.animationName= "br3s";
+    document.getElementById("b4").style.animationName= "bl4s";
+    document.getElementById("r4").style.animationName= "br4s";
+    document.getElementById("b5").style.animationName= "bl5s";
+    document.getElementById("r5").style.animationName= "br5s";
+    document.getElementById("b6").style.animationName= "bl26s";
+    document.getElementById("r6").style.animationName= "br26s";
+    document.getElementById("b7").style.animationName= "bl7s";
+    document.getElementById("r7").style.animationName= "br7s";
+    document.getElementById("b8").style.animationName= "bl18s";
+    document.getElementById("r8").style.animationName= "br18s";
+    document.getElementById("b9").style.animationName= "bl9s";
+    document.getElementById("r9").style.animationName= "br9s";
+    document.getElementById("b10").style.animationName= "bl10s";
+    document.getElementById("r10").style.animationName= "br10s";
+}
+function lr_heart_t() {
+    document.getElementById("b1").style.animationName= "bl18t";
+    document.getElementById("r1").style.animationName= "br18t";
+    document.getElementById("b2").style.animationName= "bl26t";
+    document.getElementById("r2").style.animationName= "br26t";
+    document.getElementById("b3").style.animationName= "bl3t";
+    document.getElementById("r3").style.animationName= "br3t";
+    document.getElementById("b4").style.animationName= "bl4t";
+    document.getElementById("r4").style.animationName= "br4t";
+    document.getElementById("b5").style.animationName= "bl5t";
+    document.getElementById("r5").style.animationName= "br5t";
+    document.getElementById("b6").style.animationName= "bl26t";
+    document.getElementById("r6").style.animationName= "br26t";
+    document.getElementById("b7").style.animationName= "bl7t";
+    document.getElementById("r7").style.animationName= "br7t";
+    document.getElementById("b8").style.animationName= "bl18t";
+    document.getElementById("r8").style.animationName= "br18t";
+    document.getElementById("b9").style.animationName= "bl9t";
+    document.getElementById("r9").style.animationName= "br9t";
+    document.getElementById("b10").style.animationName= "bl10t";
+    document.getElementById("r10").style.animationName= "br10t";
+}
+function interation() {
+    setTimeout(lr_heart_s,0);
+    setTimeout(lr_heart_t,1500);
+}
+setInterval(interation,3000);
 function mobile() {
     alert("Trang web này chỉ dành cho PC, Trang web dành cho mobile sẽ được phát hành trong tương lai gần o(*￣▽￣*)o");
 }
@@ -184,7 +233,7 @@ function off() {
     alert("Đã mất kết nối internet o(￣┰￣*)ゞ");
 }
 function on() {
-    alert("Đã khôi phục kết nối internet \(￣︶￣*\))")
+    alert("Đã khôi phục kết nối internet o\(￣︶￣*\))")
 }
 window.onoffline= off; window.ononline= on;
 function down(x,y) {
