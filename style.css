@@ -941,6 +941,7 @@ body {
 #l-3 > input {
     width: 155px;
     height: 30px;
+    color: black;
 }
 #l-4 {
     margin: -32px 0 0 350px;
@@ -1051,9 +1052,6 @@ body {
 }
 #l-1 > input:focus,#l-2 > input:focus,#l-5 > input:focus,#l-6 > input:focus,#l-3 > input:focus,#l-4 > select:focus,#l-9 > input:focus,#l-8 > div,#l-8 > label:hover {
     box-shadow: 0px 0px 5px 1px black;
-}
-#l-3 > input {
-    color: black;
 }
 #l-4 > label > .l-t1 {
     color: palevioletred;
