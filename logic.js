@@ -225,10 +225,6 @@ function interation() {
     setTimeout(lr_heart_t,1500);
 }
 setInterval(interation,3000);
-function mobile() {
-    alert("Trang web này chỉ dành cho PC, Trang web dành cho mobile sẽ được phát hành trong tương lai gần o(*￣▽￣*)o");
-}
-document.getElementsByTagName("body")[0].onload= mobile;
 function off() {
     alert("Đã mất kết nối internet o(￣┰￣*)ゞ");
 }
