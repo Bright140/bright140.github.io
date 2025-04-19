@@ -65,14 +65,14 @@ function element3s() {
     document.getElementById('Synthetic').style.fontStyle= 'italic';
     document.getElementById('Synthetic').style.margin= '60px 0 0 90px';
     document.getElementById('St3').innerHTML= '0 Infinity Element 0';
-    document.getElementById('Synthetic').style.color= 'white';
+    document.getElementById('Synthetic').style.color= 'black';
 }
 function element3r() {
     document.getElementById("Synthetic").innerHTML= 'Gosei';
     document.getElementById('Synthetic').style.fontStyle= 'normal';
     document.getElementById('Synthetic').style.margin= '90px 0 0 140px';
     document.getElementById('St3').innerHTML= '';
-    document.getElementById('Synthetic').style.color= 'black';
+    document.getElementById('Synthetic').style.color= 'white';
 }
 function element0s(a,b,c,x,y,z) {
     document.getElementById(a).innerHTML= x;
@@ -133,14 +133,14 @@ function random(min,max) {
     return Math.floor(Math.random()*(max-min+1));
 }
 function chosse(x) {
-    const url= ["./images/Icon_Sword.webp","./images/Icon_Claymore.webp","./images/Icon_Polearm.webp","./images/Icon_Catalyst.webp","./images/Icon_Bow.webp"];
+    const url= ["/images/Icon_Sword.webp","/images/Icon_Claymore.webp","/images/Icon_Polearm.webp","/images/Icon_Catalyst.webp","/images/Icon_Bow.webp"];
     t= random(1,5);
     w= url[t]; r= '<img src="'; l= '" alt="">';
     document.getElementById(x).innerHTML= r+w+l;
     return w;
 }
 function content(a,b,c,d,e,f) {
-    const url= ["./images/Icon_Sword.webp","./images/Icon_Claymore.webp","./images/Icon_Polearm.webp","./images/Icon_Catalyst.webp","./images/Icon_Bow.webp"];
+    const url= ["/images/Icon_Sword.webp","/images/Icon_Claymore.webp","/images/Icon_Polearm.webp","/images/Icon_Catalyst.webp","/images/Icon_Bow.webp"];
     if(a==url[0]&&b==url[0]&&c==url[0]&&d==url[0]&&e==url[0]) {
         document.getElementById(f).innerHTML= "Sword attacks are the middle ground of melee weapons";
     } else if(a==url[1]&&b==url[1]&&c==url[1]&&d==url[1]&&e==url[1]) {
