@@ -1,0 +1,1095 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+#name {
+    color: darkslateblue;
+    transition: color 2s ease;
+}
+#name:hover {
+    color: rgb(0, 255, 255);
+    font-style: italic;
+}
+.container-icon {
+    width: 90px;
+    height: 30px;
+    margin: -50px 0 0 175px;
+}
+#light {
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    margin: -33px 0 0 50px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 2px rgb(72, 110, 222);
+}
+#light > img {
+    width: 35px;
+    height: 35px;
+}
+#github {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+#github:hover {
+    box-shadow: 0px 0px 5px 1px white;
+}
+#github > img {
+    width: 30px;
+    height: 30px;
+}
+.title {
+    color: blueviolet;
+    font-size: 18px;
+    text-decoration: line-through;
+    text-decoration-color: gray;
+    text-decoration-thickness: 2px;
+    transition: color 1s ease-in-out, font-size 1.5s ease-in-out 1s;
+}
+.title:hover {
+    color: red;
+    font-size: 22px;
+    text-decoration: none;
+}
+#content {
+    margin-top: -95px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.container-calendar {
+    width: 150px;
+    height: 190px;
+    margin: -90px 0 0 1140px;
+}
+.container-calendar > p {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 10px 0 0 40px;
+}
+.calendar {
+    width: 150px;
+    height: 150px;
+    display: grid;
+    grid-template-columns: 150px;
+    grid-template-rows: 35px 80px 35px;
+    border: 3px solid rgb(114, 114, 114);
+    box-shadow: 0px 0px 5px 1px white;
+}
+#option-2 {
+    border-top: 2px dashed gray;
+    border-bottom: 2px dashed gray;
+}
+#option-1 > p,#option-2 > p,#option-3 > p {
+    width: 150px;
+    text-align: center;
+}
+#option-1 > p,#option-3 > p {
+    margin: 10px 0;
+}
+#option-2 > p {
+    font-size: 50px;
+    margin: 15px 0;
+}
+.profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin: -126px 0 0 1345px;
+    border-radius: 12px;
+    border: 2px solid white;
+}
+.profile > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.title-profile {
+    width: 100px;
+    height: 50px;
+    margin: 15px 0 0 1370px;
+    color: darkslateblue;
+    font-weight: bold;
+}
+#name {
+    color: darkslateblue;
+}
+#like {
+    color: rgb(239, 113, 134);
+}
+#school {
+    color: blue;
+    position: relative;
+}
+#school::after {
+    position: absolute;
+    content: "";
+    width: 241px;
+    height: 1.5px;
+    background-color: blue;
+    right: 0px;
+    display: none;
+}
+#school:hover::after {
+    display: inline;
+}
+#school:hover {
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+.title-music {
+    width: 1060px;
+    height: 410px;
+    margin: 10px 0 0 230px;
+}
+.title-music > p {
+    margin: 0 0 0 460px;
+    font-size: 18px;
+    font-style: italic;
+}
+#so1 {
+    color: rgb(186, 186, 27);
+}
+#so2 {
+    color: red;
+}
+#so3 {
+    color: rgb(99, 99, 216);
+}
+#so4 {
+    color: rgb(141, 69, 81);
+}
+.title-music > div {
+    width: 1050px;
+    height: 368px;
+    margin: 10px 0 0 0;
+    border: 4px solid gray;
+    border-radius: 16px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.title-music > div > div {
+    width: 2150px;
+    height: 352px;
+    display: grid;
+    grid-template-columns: 500px 500px 500px 500px;
+    grid-template-rows: 352px;
+    column-gap: 50px;
+    background-color: white;
+    border-radius: 12px;
+}
+.video-limitid {
+    width: 1331px;
+    height: 800px;
+    margin: 100px 0 0 90px;
+}
+.video-limitid > video {
+    width: 1330px;
+    height: 750px;
+    border: 3px dashed gray;
+}
+.video-limitid > p {
+    margin: 10px 0 0 480px;
+}
+.video-limitid > p > span {
+    font-weight: bold;
+}
+#bilibili {
+    text-decoration: none;
+    color: rgb(185, 0, 0);
+}
+#bilibili:hover {
+    border-left: 2px solid rgb(0, 132, 255);
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 160, 0);
+}
+#bilibili:active {
+    color: rgb(0, 132, 255);
+    border-left-color: rgb(185, 0, 0);
+}
+#aniplex {
+    text-decoration: none;
+    color: rgb(0, 132, 255);
+}
+#aniplex:hover {
+    border-right: 2px solid rgb(185, 0, 0);
+    text-decoration: overline;
+    text-decoration-color: rgb(0, 160, 0);
+}
+#aniplex:active {
+    color: rgb(185, 0, 0);
+    border-left-color: rgb(0, 132, 255);
+}
+.container-element {
+    width: 1050px;
+    height: 680px;
+    margin: 100px 0 0 235px;
+}
+.container-element > p {
+    width: 125px;
+    height: 30px;
+    margin-left: 460px;
+    padding: 10px 0 0 10px;
+    font-size: 18px;
+    border: 2px solid;
+    border-color: red yellow blue green;
+}
+#container {
+    width: 1050px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 200px 200px 200px;
+}
+#text1,#text2,#text6,#text7,#text3 {
+    border-width: 3px;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+#Wind,#Fire,#Earth,#Water,#Synthetic {
+    font-size: 20px;
+    font-weight: 600;
+}
+#Wt1,#Ft2,#St3,#Et6,#Wt7 {
+    font-size: 20px;
+}
+#text1 {
+    grid-row: 1/span 2;
+    border-style: solid dashed solid solid;
+    border-color: green;
+}
+#Wind {
+    margin: 190px 0 0 150px;
+    color: green;
+}
+#Wt1 {
+    color: rgb(0, 255, 0);
+}
+@keyframes Winds {
+    0% {
+        background-color: black;
+        border-color: green;
+    }
+    100% {
+        background-color: green;
+        border-color: rgb(0, 255, 0);
+    }
+}
+@keyframes Windt {
+    0% {
+        background-color: green;
+        border-color: rgb(0, 255, 0);
+    }
+    100% {
+        background-color: black;
+        border-color: green;
+    }
+}
+#Wt1,#Et6 {
+    margin: 50px 0 0 70px;
+}
+#PW1,#PE6 {
+    display: none;
+    width: 64px;
+    height: 64px;
+    margin: -200px 0 0 140px;
+}
+#text2 {
+    grid-column: 2/span 2;
+    border-style: solid solid dashed solid;
+    border-color: red;
+}
+#Fire {
+    margin: 100px 0 0 340px;
+    color: red
+}
+#Ft2 {
+    color: rgb(120, 0, 0);
+}
+@keyframes Fires {
+    0% {
+        background-color: black;
+        border-color: red;
+    }
+    100% {
+        background-color: red;
+        border-color: rgb(120, 0, 0);
+    }
+}
+@keyframes Firet {
+    0% {
+        background-color: red;
+        border-color: rgb(120, 0, 0);
+    }
+    100% {
+        background-color: black;
+        border-color: red;
+    }
+}
+#Ft2,#Wt7 {
+    margin: -20px 0 0 135px;
+}
+#PF2,#PW7 {
+    display: none;
+    width: 64px;
+    height: 64px;
+    margin: -50px 0 0 520px;
+}
+#text6 {
+    grid-row: 2/span 2;
+    grid-column: 3/span 1;
+    border-style: solid solid solid dashed;
+    border-color: yellow;
+}
+#Earth {
+    margin: 190px 0 0 150px;
+    color: yellow;
+}
+#Et6 {
+    color: rgb(152, 152, 0);
+}
+@keyframes Earths {
+    0% {
+        background-color: black;
+        border-color: yellow;
+    }
+    100% {
+        background-color: yellow;
+        border-color: rgb(152, 152, 0);
+    }
+}
+@keyframes Eartht {
+    0% {
+        background-color: yellow;
+        border-color: rgb(152, 152, 0);
+    }
+    100% {
+        background-color: black;
+        border-color: yellow;
+    }
+}
+#text7 {
+    grid-column: 1/span 2;
+    grid-row: 3/span 1;
+    border-style: dashed solid solid solid;
+    border-color: blue;
+}
+#Water {
+    margin: 100px 0 0 330px;
+    color: blue;
+}
+#Wt7 {
+    color: rgb(110, 110, 200);
+}
+@keyframes Waters {
+    0% {
+        background-color: black;
+        border-color: blue;
+    }
+    100% {
+        background-color: blue;
+        border-color: rgb(110, 110, 200);
+    }
+}
+@keyframes Watert {
+    0% {
+        background-color: blue;
+        border-color: rgb(110, 110, 200);
+    }
+    100% {
+        background-color: black;
+        border-color: blue;
+    }
+}
+#text3 {
+    grid-column: 2/span 1;
+    grid-row: 2/span 1;
+    border-style: solid;
+    border-color: white;
+}
+#Synthetic {
+    margin: 90px 0 0 140px;
+}
+#St3 {
+    margin: 40px 0 0 95px;
+    color: black;
+}
+@keyframes Synthetics {
+    0% {
+        background-color: black;
+        border-style: solid;
+        border-color: white;
+    }
+    100% {
+        background-color: white;
+        border-style: dashed;
+        border-color: red yellow blue green;
+    }
+}
+@keyframes Synthetict {
+    0% {
+        background-color: white;
+        border-style: dashed;
+        border-color: red yellow blue green;
+    }
+    100% {
+        background-color: black;
+        border-style: solid;
+        border-color: white;
+    }
+}
+.container-0 {
+    width: 1100px;
+    height: 250px;
+    border: 8px double white;
+    margin: 100px 0 0 205px;
+}
+#choose {
+    margin: 40px 0 0 70px;
+    width: 100px;
+    height: 100px;
+    border-color: red yellow green blue;
+    border-width: 10px;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    font-style: italic;
+}
+#choose:hover {
+    border-color: blue green yellow red;
+}
+.spcb {
+    width: 760px;
+    height: 128px;
+    margin: -120px 0 0 280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#sword,#polearm,#claymore,#catalyst,#bow {
+    border: 3px solid rgb(160, 160, 160);
+    margin-top: 0;
+    width: 130px;
+    height: 130px;
+    border-radius: 15px;
+    background-color: white;
+}
+#S1,#P2,#C3,#C4,#B5 {
+    width: 128px;
+    height: 128px;
+    margin-top: 0;
+}
+.title-0 {
+    width: 150px;
+    margin: -42px 0 0 190px;
+    font-size: 18px;
+    font-weight: 600;
+}
+#content-roll {
+    width: 760px;
+    height: 60px;
+    border-radius: 10px;
+    border: 2px dotted white;
+    margin: 25px 0 0 280px;
+    box-shadow: 0px 0px 2px 1px white;
+}
+#want {
+    width: 120px;
+    margin: 10px 0 0 10px;
+}
+#about {
+    margin-top: 20px;
+    font-style: italic;
+}
+.container-heart {
+    width: 800px;
+    height: 590px;
+    margin: 100px 0 0 360px;
+}
+.container-heart > div {
+    width: 800px;
+    height: 540px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 540px;
+}
+.container-heart > p {
+    margin-left: 380px;
+    width: 40px;
+    color: rgb(0, 255, 0);
+    border-bottom: 2px dashed red;
+}
+#heart-b,#heart-r {
+    position: relative;
+}
+#b1,#b2,#b3,#b4,#b5,#b6,#b7,#b8,#b9,#b10 {
+    position: absolute;
+    right: 0;
+    height: 54px;
+    background-color: rgb(0, 210, 0);
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+#r1,#r2,#r3,#r4,#r5,#r6,#r7,#r8,#r9,#r10 {
+    position: absolute;
+    left: 0;
+    height: 54px;
+    background-color: red;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+#b1,#r1 {
+    width: 180px;
+}
+@keyframes bl18s {
+    0% {
+        background-color: rgb(0, 210, 0);
+        width: 180px;
+    }
+    100% {
+        background-color: red;
+        width: 200px;
+    }
+}
+@keyframes bl18t {
+    0% {
+        background-color: red;
+        width: 200px;
+    }
+    100% {
+        background-color: rgb(0, 210, 0);
+        width: 180px;
+    }
+}
+@keyframes br18s {
+    0% {
+        background-color: red;
+        width: 180px;
+    }
+    100% {
+        background-color: rgb(0, 210, 0);
+        width: 200px;
+    }
+}
+@keyframes br18t {
+    0% {
+        background-color: rgb(0, 210, 0);
+        width: 200px;
+    }
+    100% {
+        background-color: red;
+        width: 180px;
+    }
+}
+#b2,#r2 {
+    top: 54px;
+    width: 300px;
+}
+@keyframes bl26s {
+    0% {
+        background-color: rgb(0, 210, 0);
+        width: 300px;
+    }
+    100% {
+        background-color: red;
+        width: 320px;
+    }
+}
+@keyframes bl26t {
+    0% {
+        background-color: red;
+        width: 320px;
+    }
+    100% {
+        background-color: rgb(0, 210, 0);
+        width: 300px;
+    }
+}
+@keyframes br26s {
+    0% {
+        background-color: red;
+        width: 300px;
+    }
+    100% {
+        background-color: rgb(0, 210, 0);
+        width: 320px;
+    }
+}
+@keyframes br26t {
+    0% {
+        background-color: rgb(0, 210, 0);
+        width: 320px;
+    }
+    100% {
+        background-color: red;
+        width: 300px;
+    }
+}
+#b3,#r3 {
+    top: 108px;
+    width: 340px;
+}
+@keyframes bl3s {
+    0% {
+        background-color: rgb(0, 210, 0);
+        width: 340px;
+    }
+    100% {
+        background-color: red;
+        width: 360px;
+    }
+}
+@keyframes bl3t {
+    0% {
+        background-color: red;
+        width: 360px;
+    }
+    100% {
+        background-color: rgb(0, 210, 0);
+        width: 340px;
+    }
+}
+@keyframes br3s {
+    0% {
+        background-color: red;
+        width: 340px;
+    }
+    100% {
+        background-color: rgb(0, 210, 0);
+        width: 360px;
+    }
+}
+@keyframes br3t {
+    0% {
+        background-color: rgb(0, 210, 0);
+        width: 360px;
+    }
+    100% {
+        background-color: red;
+        width: 340px;
+    }
+}
+#b4,#r4 {
+    top: 162px;
+    width: 380px;
+}
+@keyframes bl4s {
+    0% {
+        background-color: rgb(0, 210, 0);
+        width: 380px;
+    }
+    100% {
+        background-color: red;
+        width: 400px;
+    }
+}
+@keyframes bl4t {
+    0% {
+        background-color: red;
+        width: 400px;
+    }
+    100% {
+        background-color: rgb(0, 210, 0);
+        width: 380px;
+    }
+}
+@keyframes br4s {
+    0% {
+        background-color: red;
+        width: 380px;
+    }
+    100% {
+        background-color: rgb(0, 210, 0);
+        width: 400px;
+    }
+}
+@keyframes br4t {
+    0% {
+        background-color: rgb(0, 210, 0);
+        width: 400px;
+    }
+    100% {
+        background-color: red;
+        width: 380px;
+    }
+}
+#b5,#r5 {
+    top: 216px;
+    width: 360px;
+}
+@keyframes bl5s {
+    0% {
+        background-color: rgb(0, 210, 0);
+        width: 360px;
+    }
+    100% {
+        background-color: red;
+        width: 380px;
+    }
+}
+@keyframes bl5t {
+    0% {
+        background-color: red;
+        width: 380px;
+    }
+    100% {
+        background-color: rgb(0, 210, 0);
+        width: 360px;
+    }
+}
+@keyframes br5s {
+    0% {
+        background-color: red;
+        width: 360px;
+    }
+    100% {
+        background-color: rgb(0, 210, 0);
+        width: 380px;
+    }
+}
+@keyframes br5t {
+    0% {
+        background-color: rgb(0, 210, 0);
+        width: 380px;
+    }
+    100% {
+        background-color: red;
+        width: 360px;
+    }
+}
+#b6,#r6 {
+    top: 270px;
+    width: 300px;
+}
+#b7,#r7 {
+    top: 324px;
+    width: 240px;
+}
+@keyframes bl7s {
+    0% {
+        background-color: rgb(0, 210, 0);
+        width: 240px;
+    }
+    100% {
+        background-color: red;
+        width: 260px;
+    }
+}
+@keyframes bl7t {
+    0% {
+        background-color: red;
+        width: 260px;
+    }
+    100% {
+        background-color: rgb(0, 210, 0);
+        width: 240px;
+    }
+}
+@keyframes br7s {
+    0% {
+        background-color: red;
+        width: 240px;
+    }
+    100% {
+        background-color: rgb(0, 210, 0);
+        width: 260px;
+    }
+}
+@keyframes br7t {
+    0% {
+        background-color: rgb(0, 210, 0);
+        width: 260px;
+    }
+    100% {
+        background-color: red;
+        width: 240px;
+    }
+}
+#b8,#r8 {
+    top: 378px;
+    width: 180px;
+}
+#b9,#r9 {
+    top: 432px;
+    width: 120px;
+}
+@keyframes bl9s {
+    0% {
+        background-color: rgb(0, 210, 0);
+        width: 120px;
+    }
+    100% {
+        background-color: red;
+        width: 140px;
+    }
+}
+@keyframes bl9t {
+    0% {
+        background-color: red;
+        width: 140px;
+    }
+    100% {
+        background-color: rgb(0, 210, 0);
+        width: 120px;
+    }
+}
+@keyframes br9s {
+    0% {
+        background-color: red;
+        width: 120px;
+    }
+    100% {
+        background-color: rgb(0, 210, 0);
+        width: 140px;
+    }
+}
+@keyframes br9t {
+    0% {
+        background-color: rgb(0, 210, 0);
+        width: 140px;
+    }
+    100% {
+        background-color: red;
+        width: 120px;
+    }
+}
+#b10,#r10 {
+    top: 486px;
+    width: 60px;
+}
+@keyframes bl10s {
+    0% {
+        background-color: rgb(0, 210, 0);
+        width: 60px;
+    }
+    100% {
+        background-color: red;
+        width: 80px;
+    }
+}
+@keyframes bl10t {
+    0% {
+        background-color: red;
+        width: 80px;
+    }
+    100% {
+        background-color: rgb(0, 210, 0);
+        width: 60px;
+    }
+}
+@keyframes br10s {
+    0% {
+        background-color: red;
+        width: 60px;
+    }
+    100% {
+        background-color: rgb(0, 210, 0);
+        width: 80px;
+    }
+}
+@keyframes br10t {
+    0% {
+        background-color: rgb(0, 210, 0);
+        width: 80px;
+    }
+    100% {
+        background-color: red;
+        width: 60px;
+    }
+}
+.container-form {
+    width: 850px;
+    height: 360px;
+    margin: 100px 0 0 340px;
+}
+.container-form > p {
+    margin: 0 0 0 320px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.container-form > form {
+    width: 850px;
+    height: 330px;
+    margin-top: 5px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+#l-1 {
+    margin: 20px 0 0 50px;
+}
+#l-1 > label,#l-2 > label,#l-3 > label,#l-4 > label,#l-5 > label,#l-6 > label,#l-9 > label {
+    font-size: 20px;
+    font-style: italic;
+}
+#l-1 > input,#l-2 > input {
+    width: 200px;
+    height: 30px;
+}
+#l-2 {
+    margin: -35px 0 0 350px;
+}
+#l-3,#l-7 {
+    margin: 30px 0 0 50px;
+}
+#l-3 > input {
+    width: 155px;
+    height: 30px;
+    color: black;
+}
+#l-4 {
+    margin: -32px 0 0 350px;
+}
+#l-4 > select {
+    width: 100px;
+    height: 30px;
+}
+#l-4 > select > option {
+    margin-top: -10px;
+}
+#op-1,#op-2,#op-3 {
+    color: black;
+}
+#op-1 {
+    background-color: royalblue;
+}
+#op-2 {
+    background-color: palevioletred;
+}
+#l-5,#l-6 {
+    margin: 35px 0 0 50px;
+}
+#l-5 > input {
+    width: 175px;
+    height: 30px;
+}
+#l-6 > input {
+    width: 300px;
+    height: 30px;
+}
+#l-7 > input {
+    width: 50px;
+    height: 30px;
+}
+#l-10 > input {
+    width: 70px;
+    height: 30px;
+}
+#l-8 {
+    margin: -290px 0 0 650px;
+}
+#l-8 > div {
+    width: 150px;
+    height: 150px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+#l-8 > p {
+    margin: 5px 0 0 45px;
+}
+#l-8 > p > span {
+    font-weight: bold;
+}
+#l-8 > label {
+    display: block;
+    width: 80px;
+    height: 25px;
+    margin: 10px 0 0 35px;
+    padding: 5px 0 0 5px;
+    position: relative;
+}
+#l-8 > label > input {
+    display: none;
+}
+#l-8 > label > span {
+    display: none;
+    position: absolute;
+    width: 150px;
+    font-size: 14px;
+    background-color: gray;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0px 0px 5px 2px gray;
+    left: -30px;
+    top: 50px;
+}
+#l-8 > label > span::after {
+    content: "";
+    position: absolute;
+    border-width: 7px;
+    border-style: dashed;
+    border-color: transparent transparent gray transparent;
+    left: 70px;
+    bottom: 53px;
+}
+#l-8 > label:hover > span {
+    display: block;
+}
+#l-8 > div > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+#l-9 {
+    margin: -35px 0 0 350px;
+}
+#l-9 > input {
+    height: 30px;
+}
+#l-10 {
+    margin: -30px 0 0 150px;
+}
+#l-1 > input,#l-2 > input,#l-5 > input,#l-6 > input,#l-3 > input,#l-9 > input,#l-4 > select,#l-8 > label {
+    border: 2px solid rgb(145, 145, 145);
+    border-radius: 5px;
+    font-size: 17px;
+}
+#l-1 > input:focus,#l-2 > input:focus,#l-5 > input:focus,#l-6 > input:focus,#l-3 > input:focus,#l-4 > select:focus,#l-9 > input:focus,#l-8 > div,#l-8 > label:hover {
+    box-shadow: 0px 0px 5px 1px white;
+}
+#l-4 > label > .l-t1 {
+    color: palevioletred;
+}
+#l-4 > label > .l-t2 {
+    color: royalblue;
+}
+#l-7 > input {
+    border: 2px solid green;
+    color: green;
+}
+#l-10 > input {
+    border: 2px solid red;
+    color: red;
+}
+#l-7 > input,#l-10 > input {
+    border-radius: 5px;
+    font-size: 17px;
+    background-color: rgb(170, 170, 170);
+}
+@keyframes color {
+    0% {color: red;}
+    10% {color: orange;}
+    20% {color: gold;}
+    30% {color: green;}
+    40% {color: blue;}
+    50% {color: darkcyan;}
+    60% {color: purple;}
+    70% {color: pink;}
+    80% {color: darkslategray;}
+    90% {color: darkgray;}
+    100% {color: red;}
+}
+#favecolor {
+    color: red;
+    animation-name: color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
