@@ -904,6 +904,150 @@ body {
         width: 60px;
     }
 }
+.container-sqare {
+    width: 550px;
+    height: 740px;
+    margin: 200px 0 0 475px;
+}
+.container-sqare > p {
+    margin: 150px 0 0 230px;
+    font-size: 18px;
+}
+#ts1 {
+    color: red;
+}
+#ts2 {
+    color: rgb(0, 170, 0);
+}
+#ts3 {
+    color: rgb(45, 45, 255);
+}
+#sqare {
+    width: 550px;
+    height: 550px;
+    border: 1px solid red;
+    border-width: 3px;
+    border-color: rgb(45, 45, 255) rgb(0, 170, 0) rgb(0, 170, 0) rgb(45, 45, 255);
+    background-color: rgb(145, 145, 145);
+    animation-name: rorate;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes rorate {
+    0% {
+        border-color: rgb(45, 45, 255) rgb(0, 170, 0) rgb(0, 170, 0) rgb(45, 45, 255);
+        transform: rotate(0deg);
+    }
+    25% {
+        border-color: red;
+        transform: rotate(90deg);
+    }
+    50% {
+        border-color: rgb(0, 170, 0) rgb(45, 45, 255) rgb(45, 45, 255) rgb(0, 170, 0);
+        transform: rotate(180deg);
+    }
+    75% {
+        border-color: red;
+        transform: rotate(270deg);
+    }
+    100% {
+        border-color: rgb(45, 45, 255) rgb(0, 170, 0) rgb(0, 170, 0) rgb(45, 45, 255);
+        transform: rotate(360deg);
+    }
+
+}
+#sq1,#sq2,#sqare {
+    animation-duration: 3s;
+}
+#sq1,#sq2,#sq3 {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+#sq1 {
+    background-color: rgb(0, 170, 0);
+    top: 0px;
+    left: 50px;
+    animation-name: sq1s;
+}
+@keyframes sq1s {
+    0% {
+        background-color: rgb(0, 170, 0);
+        top: 0px;
+        left: 50px;
+    }
+    35% {
+        background-color: red;
+        top: 0px;
+        left: 500px;
+    }
+    70% {
+        background-color: rgb(45, 45, 255);
+        top: 450px;
+        left: 500px;
+    }
+    100% {
+        background-color: rgb(0, 170, 0);
+        top: 0px;
+        left: 50px;
+    }
+}
+#sq2 {
+    background-color: rgb(45, 45, 255);
+    top: 450px;
+    left: 450px;
+    animation-name: sq2s;
+}
+@keyframes sq2s {
+    0% {
+        background-color: rgb(45, 45, 255);
+        top: 450px;
+        left: 450px;
+    }
+    35% {
+        background-color: red;
+        top: 450px;
+        left: 0px;
+    }
+    70% {
+        background-color: rgb(0, 170, 0);
+        top: 0px;
+        left: 0px;
+    }
+    100% {
+        background-color: rgb(45, 45, 255);
+        top: 450px;
+        left: 450px;
+    }
+}
+#sq3 {
+    background-color: rgb(0, 170, 0);
+    top: -100px;
+    left: 0px;
+    animation-name: sq3s;
+    animation-duration: 6s;
+}
+@keyframes sq3s {
+    0% {
+        background-color: rgb(0, 170, 0);
+        top: -100px;
+        left: 0px;
+    }
+    50% {
+        background-color: rgb(45, 45, 255);
+        top: 400px;
+        left: 500px;
+    }
+    100% {
+        background-color: rgb(0, 170, 0);
+        top: -100px;
+        left: 0px;
+    }
+}
 .container-form {
     width: 850px;
     height: 360px;
