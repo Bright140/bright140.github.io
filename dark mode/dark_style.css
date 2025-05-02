@@ -449,6 +449,7 @@ body {
     width: 1100px;
     height: 250px;
     border: 8px double white;
+    box-shadow: 0px 0px 10px 2px gray;
     margin: 100px 0 0 205px;
 }
 #choose {
@@ -1065,6 +1066,7 @@ body {
     height: 330px;
     margin-top: 5px;
     border: 2px solid gray;
+    box-shadow: 0px 0px 10px 1px gray;
     border-radius: 5px;
 }
 #l-1 {
