@@ -63,14 +63,14 @@ setInterval(time,1000);
 function element3s() {
     document.getElementById("Synthetic").innerHTML= 'Synthetic (Vô Hạn)';
     document.getElementById('Synthetic').style.fontStyle= 'italic';
-    document.getElementById('Synthetic').style.margin= '60px 0 0 90px';
+    document.getElementById('Synthetic').style.marginTop= '60px';
     document.getElementById('St3').innerHTML= '0 Infinity Element 0';
     document.getElementById('Synthetic').style.color= 'black';
 }
 function element3r() {
     document.getElementById("Synthetic").innerHTML= 'Gosei';
     document.getElementById('Synthetic').style.fontStyle= 'normal';
-    document.getElementById('Synthetic').style.margin= '90px 0 0 140px';
+    document.getElementById('Synthetic').style.marginTop= '90px';
     document.getElementById('St3').innerHTML= '';
     document.getElementById('Synthetic').style.color= 'white';
 }
