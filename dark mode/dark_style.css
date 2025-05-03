@@ -1169,24 +1169,13 @@ body {
 }
 #l-8 > label > span {
     display: none;
-    position: absolute;
-    width: 150px;
+    margin: 20px 0 0 -35px;
+    width: 155px;
     font-size: 14px;
     background-color: gray;
     border-radius: 5px;
     color: white;
     box-shadow: 0px 0px 5px 2px gray;
-    left: -35px;
-    top: 45px;
-}
-#l-8 > label > span::after {
-    content: "";
-    position: absolute;
-    border-width: 7px;
-    border-style: dashed;
-    border-color: transparent transparent gray transparent;
-    left: 70px;
-    bottom: 53px;
 }
 #l-8 > label:hover > span {
     display: block;
