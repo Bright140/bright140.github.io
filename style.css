@@ -263,7 +263,8 @@ body {
     border-color: green;
 }
 #Wind {
-    margin: 190px 0 0 150px;
+    margin-top: 190px;
+    text-align: center;
     color: green;
 }
 #Wt1 {
@@ -290,13 +291,14 @@ body {
     }
 }
 #Wt1,#Et6 {
-    margin: 50px 0 0 70px;
+    margin-top: 50px;
+    text-align: center;
 }
 #PW1,#PE6 {
     display: none;
     width: 64px;
     height: 64px;
-    margin: -200px 0 0 140px;
+    margin: -240px 0 0 140px;
 }
 #text2 {
     grid-column: 2/span 2;
@@ -346,7 +348,8 @@ body {
     border-color: yellow;
 }
 #Earth {
-    margin: 190px 0 0 150px;
+    margin-top: 190px;
+    text-align: center;
     color: yellow;
 }
 #Et6 {
@@ -412,10 +415,12 @@ body {
     border-color: black;
 }
 #Synthetic {
-    margin: 90px 0 0 140px;
+    margin-top: 90px;
+    text-align: center;
 }
 #St3 {
-    margin: 40px 0 0 95px;
+    margin-top: 40px;
+    text-align: center;
     color: white;
 }
 @keyframes Synthetics {
