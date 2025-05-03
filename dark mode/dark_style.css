@@ -6,6 +6,9 @@ body {
     background-color: black;
     color: white;
 }
+.about-me {
+    width: 1070px;
+}
 #name {
     color: darkslateblue;
 }
@@ -517,15 +520,13 @@ body {
     grid-template-columns: 400px 400px;
     grid-template-rows: 540px;
 }
-#heart-text {
+.container-heart > p {
     margin: 15px auto;
-    width: 40px;
+    width: 45px;
     height: 20px;
-    border-bottom: 2px dashed red;
-}
-#heart-text > p {
     color: rgb(0, 255, 0);
-    margin-top: 0;
+    text-align: center;
+    border-bottom: 2px dashed red;
 }
 #heart-b,#heart-r {
     position: relative;
@@ -1137,6 +1138,7 @@ body {
 }
 #l-8 {
     margin: -290px 0 0 650px;
+    width: 153px;
 }
 #l-8 > div {
     width: 150px;
@@ -1145,7 +1147,8 @@ body {
     border-radius: 10px;
 }
 #l-8 > p {
-    margin: 5px 0 0 45px;
+    text-align: center;
+    margin-top: 10px;
 }
 #l-8 > p > span {
     font-weight: bold;
@@ -1153,10 +1156,13 @@ body {
 #l-8 > label {
     display: block;
     width: 80px;
-    height: 25px;
-    margin: 10px 0 0 35px;
-    padding: 5px 0 0 5px;
+    height: 30px;
+    margin: 10px auto;
     position: relative;
+}
+#l-8 > label > p {
+    text-align: center;
+    margin-top: 5px;
 }
 #l-8 > label > input {
     display: none;
@@ -1170,8 +1176,8 @@ body {
     border-radius: 5px;
     color: white;
     box-shadow: 0px 0px 5px 2px gray;
-    left: -30px;
-    top: 50px;
+    left: -35px;
+    top: 45px;
 }
 #l-8 > label > span::after {
     content: "";
