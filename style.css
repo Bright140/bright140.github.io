@@ -138,7 +138,7 @@ body {
 .title-music {
     width: 1060px;
     height: 410px;
-    margin: 15px 0 0 230px;
+    margin: 15px 0 0 225px;
 }
 .title-music > p {
     margin-top: 0;
@@ -178,9 +178,9 @@ body {
     border-radius: 12px;
 }
 .video-limitid {
-    width: 1331px;
+    width: 1335px;
     height: 800px;
-    margin: 100px 0 0 90px;
+    margin: 100px 0 0 87.5px;
 }
 .video-limitid > video {
     width: 1330px;
@@ -223,7 +223,7 @@ body {
 .container-element {
     width: 1050px;
     height: 680px;
-    margin: 100px 0 0 235px;
+    margin: 100px 0 0 230px;
 }
 #element-text {
     width: 125px;
@@ -452,7 +452,7 @@ body {
     height: 250px;
     border: 8px double black;
     box-shadow: 0px 0px 10px 2px gray;
-    margin: 100px 0 0 205px;
+    margin: 100px 0 0 201px;
 }
 #choose {
     margin: 40px 0 0 70px;
@@ -514,7 +514,7 @@ body {
 .container-heart {
     width: 800px;
     height: 590px;
-    margin: 100px 0 0 360px;
+    margin: 100px 0 0 355px;
 }
 .container-heart > div {
     width: 800px;
@@ -914,7 +914,7 @@ body {
 .container-sqare {
     width: 550px;
     height: 740px;
-    margin: 200px 0 0 475px;
+    margin: 200px 0 0 480px;
 }
 #sqare-text {
     margin: 150px auto;
@@ -1064,7 +1064,7 @@ body {
 .container-form {
     width: 850px;
     height: 360px;
-    margin: 100px 0 0 340px;
+    margin: 100px 0 0 330px;
 }
 .container-form > p {
     text-align: center;
