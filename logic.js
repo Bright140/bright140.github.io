@@ -1,8 +1,19 @@
-function changer1() {
-    document.getElementById("like").innerHTML= '&#10084';
+function changer(x) {
+    document.getElementById("like").innerHTML= x;
 }
-function changer2() {
-    document.getElementById("like").innerHTML= 'love';
+function namemy(x,y) {
+    document.getElementById("name").style.color= x;
+    document.getElementById("name").style.fontStyle= y;
+}
+function school(x) {
+    document.getElementById("school").style.textDecoration= x;
+}
+function titlew(x,y,z) {
+    document.getElementById("title").style.color= x;
+    document.getElementById("title").style.fontSize= y;
+    document.getElementById("title").style.textDecoration= z;
+    document.getElementById("title").style.textDecorationColor= 'gray';
+    document.getElementById("title").style.textDecorationThickness= '2px';
 }
 function apha(s) {
     document.getElementById("title-pro").innerHTML= s; 
@@ -129,6 +140,9 @@ function replay() {
     setTimeout(element3Sr,23000);
 }
 setInterval(replay,30000);
+function chosoe(x) {
+    document.getElementById("choose").style.borderColor= x;
+}
 function random(min,max) {
     return Math.floor(Math.random()*(max-min+1));
 }
@@ -249,15 +263,10 @@ function respan() {
 function hovere(x,y) {
     document.getElementById(x).firstElementChild.style.backgroundColor= y;
 }
-function seop(x) {
-    document.getElementById("op-3").style.backgroundColor= x;
+function displayr(x,y) {
+    document.querySelector("#avatar-label > span").style.display= x;
+    document.getElementById("avatar-label").style.boxShadow= y;
 }
-function look() {
-    const t= ['royalblue','palevioletred'];
-    setTimeout(seop,0,t[0]);
-    setTimeout(seop,1000,t[1]);
-}
-setInterval(look,1500);
 function avatarfo() {
     const imgs= new FileReader();
     imgs.readAsDataURL(document.getElementById("avatar").files[0]);

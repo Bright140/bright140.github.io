@@ -9,37 +9,23 @@ body {
 }
 #name {
     color: darkslateblue;
-}
-#name {
-    color: darkslateblue;
     transition: color 2s ease;
-}
-#name:hover {
-    color: rgb(0, 255, 255);
-    font-style: italic;
 }
 #like {
     color: rgb(239, 113, 134);
 }
 #school {
     color: blue;
-}
-#school:hover {
-    text-decoration: underline;
     text-decoration-color: blue;
+    text-decoration: none;
 }
-.title {
+#title {
     color: blueviolet;
     font-size: 18px;
     text-decoration: line-through;
     text-decoration-color: gray;
     text-decoration-thickness: 2px;
     transition: color 1s ease-in-out, font-size 1.5s ease-in-out 1s;
-}
-.title:hover {
-    color: red;
-    font-size: 22px;
-    text-decoration: none;
 }
 .container-icon {
     width: 90px;
@@ -464,9 +450,7 @@ body {
     color: white;
     font-size: 15px;
     font-style: italic;
-}
-#choose:hover {
-    border-color: blue green yellow red;
+    transition: border-color 1s ease-in-out;
 }
 .spcb {
     width: 760px;
@@ -508,7 +492,8 @@ body {
     margin: 10px 0 0 10px;
 }
 #about {
-    margin-top: 20px;
+    margin: 20px 0 20px 0;
+    text-align: center;
     font-style: italic;
 }
 .container-heart {
@@ -1111,15 +1096,6 @@ body {
 #l-4 > select > option {
     margin-top: -10px;
 }
-#op-1,#op-2,#op-3 {
-    color: white;
-}
-#op-1 {
-    background-color: royalblue;
-}
-#op-2 {
-    background-color: palevioletred;
-}
 #l-5,#l-6 {
     margin: 35px 0 0 50px;
 }
@@ -1180,9 +1156,6 @@ body {
     color: black;
     box-shadow: 0px 0px 5px 2px gray;
 }
-#l-8 > label:hover > span {
-    display: block;
-}
 #l-8 > div > img {
     width: 100%;
     height: 100%;
@@ -1202,7 +1175,7 @@ body {
     border-radius: 5px;
     font-size: 17px;
 }
-#l-1 > input:focus,#l-2 > input:focus,#l-5 > input:focus,#l-6 > input:focus,#l-3 > input:focus,#l-4 > select:focus,#l-9 > input:focus,#l-8 > div,#l-8 > label:hover {
+#l-1 > input:focus,#l-2 > input:focus,#l-5 > input:focus,#l-6 > input:focus,#l-3 > input:focus,#l-4 > select:focus,#l-9 > input:focus,#l-8 > div {
     box-shadow: 0px 0px 5px 1px black;
 }
 #l-4 > label > .l-t1 {
