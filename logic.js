@@ -176,15 +176,20 @@ function want(n) {
     t= "please wait... ";
     document.getElementById("want").innerHTML= t+n;
 }
+function apple(x) {
+    document.getElementById("choose").disabled= x;
+}
 function start() {
     x= chosse("S1"); y= chosse("P2"); z= chosse("C3"); w= chosse("C4"); v= chosse("B5");
     setTimeout(content,500,x,y,z,w,v,'about');
     setTimeout(want,0,'3');
     setTimeout(want,1000,'2');
     setTimeout(want,2000,'1');
+    apple("true");
 }
 function reset() {
     stop("S1"); stop("P2"); stop("C3"); stop("C4"); stop("B5"); stop("about"); stop("want");
+    apple("");
 }
 function roll() {
     start();
