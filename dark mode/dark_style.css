@@ -167,19 +167,23 @@ body {
 }
 .video-limitid {
     width: 1335px;
-    height: 800px;
+    height: 1670px;
     margin: 100px 0 0 87.5px;
 }
-.video-limitid > video {
+.video-container-1 {
+    width: 1335px;
+    height: 800px;
+}
+#video-content-1 {
     width: 1330px;
     height: 750px;
     border: 3px dashed gray;
 }
-.video-limitid > p {
+#title-video-1 {
     text-align: center;
     margin-top: 10px;
 }
-.video-limitid > p > span {
+#title-video-1 > span {
     font-weight: bold;
 }
 #bilibili {
@@ -207,6 +211,40 @@ body {
 #aniplex:active {
     color: rgb(185, 0, 0);
     border-left-color: rgb(0, 132, 255);
+}
+.video-container-2 {
+    width: 1335px;
+    height: 820px;
+    margin-top: 50px;
+}
+#video-content-2 {
+    width: 1335px;
+    height: 750px;
+}
+.video-container-2 > div > p {
+    text-align: center;
+}
+#title-video-2-1 {
+    margin-top: 10px;
+}
+#sr-1 {
+    color: cyan;
+}
+#sr-2 {
+    font-weight: bold;
+}
+#title-video-2-2 {
+    margin-top: -5px;
+}
+#title-video-2-2 > a {
+    text-decoration: none;
+    color: gray;
+}
+#title-video-2-2 > a:hover {
+    border-width: 2px;
+    border-color: red;
+    border-style: solid;
+    background-color: white;
 }
 .container-element {
     width: 1050px;
