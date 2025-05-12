@@ -218,8 +218,9 @@ body {
     margin-top: 50px;
 }
 #video-content-2 {
-    width: 1335px;
+    width: 1310px;
     height: 750px;
+    margin: -5px 0 0 10px;
 }
 .video-container-2 > div > p {
     text-align: center;
