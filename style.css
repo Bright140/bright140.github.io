@@ -1199,6 +1199,7 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 8px;
+    object-fit: cover;
 }
 #l-9 {
     margin: -35px 0 0 350px;
