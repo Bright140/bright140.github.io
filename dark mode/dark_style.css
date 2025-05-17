@@ -244,6 +244,7 @@ body {
 #title-video-2-2 > a:hover {
     border-width: 2px;
     border-color: red;
+    border-radius: 5px;
     border-style: solid;
     background-color: white;
 }
